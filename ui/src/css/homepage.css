@@ -82,22 +82,37 @@ h1 {
 
 .show-more {
     margin-top: .5rem;
+    cursor: pointer;
     color: var(--orange);
 }
 
 .socials {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);    
     width: 53%;
     height: 7rem;
     background-color: var(--mid-gray);
 }
 
 .social {
+    font-size: 1.2rem;
+    font-family: Sans-Serif;
     margin: 1.7rem 2.2rem;
     padding: 1rem .5rem;
+    cursor: pointer;
     background-color: #383546;
-    width: 13.5rem;
+    width: 13.5rem;  
+}
+
+.logo {
+    margin-right: .5rem;
+    width: 1.5rem;
+    size: 1rem;
+}
+
+.linkedin-logo {
+    margin-left: .2rem;
+    width: 1.5rem;
+    size: 1rem;
 }

@@ -5,21 +5,18 @@
 }
 
 .navbar-button {
-    padding: 2rem;
-    margin-left: 2rem;
-}
-
-.navbar-button:hover {
-    background-color: #5E5C78;
-    
+    margin: 1.5rem;
+    padding: .5rem;
+    margin-left: 1rem;
+    cursor: pointer;
 }
 
 #nameButton {
-    margin-left: 10rem;
+    margin-left: 24rem;
 }
 
 #homeButton {
-    margin-left: 20rem;
+    margin-left: 25rem;
 }
 
 #aboutButton {
