@@ -1,5 +1,5 @@
 .navbar {
-    background-color: var(--gray);
+    background-color: var(--light-gray);
     color: white;
     height: 5.3rem;
 }
@@ -11,6 +11,7 @@
 
 .navbar-button:hover {
     background-color: #5E5C78;
+    
 }
 
 #nameButton {

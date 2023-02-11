@@ -11,7 +11,7 @@ const NavBar = (() => {
            <div className="navbar-button float-left" id="aboutButton">About</div> 
            <div className="navbar-button float-left" id="skillsButton">Skills</div> 
            <div className="navbar-button float-left" id="contactButton">Contact</div>  
-           <div className="clear-both"/>                  
+           <div className="clear-both"></div>                 
         </div>
     )
 });

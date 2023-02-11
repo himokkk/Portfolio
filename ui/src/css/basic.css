@@ -1,6 +1,9 @@
 :root {
-    --gray: #363543;
-    --darker-gray: #282834;
+    --light-gray: #363543;
+    --dark-gray: #282834;
+    --mid-gray: #3F3E4E;
+    --white: white;
+    --orange: #F6B525;
 }
 
 .float-left {
