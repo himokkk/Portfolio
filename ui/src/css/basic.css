@@ -1,0 +1,16 @@
+:root {
+    --gray: #363543;
+    --darker-gray: #282834;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clear-both {
+    clear: both;
+}
