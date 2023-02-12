@@ -38,3 +38,7 @@ a:active {
 .color-white {
     color: white;
 }
+
+.invisible { 
+    display: none;
+}
