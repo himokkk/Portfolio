@@ -100,17 +100,17 @@ const HomePage: React.FC = (() => {
 
             <div id="projects">
                 <div className={showDiv ? 'show-div show' : 'show-div'}>
-                    <div className="switch">
+                    <div className="switch prevention">
                         <div className="switch-button" id="chess-button" onClick={switch_game_button}>Chess</div>
                         <div className="switch-button" id="game1-button" onClick={switch_game_button}>Game1</div>
                         <div className="switch-button" id="game2-button" onClick={switch_game_button}>Game2</div>
                         <div className="switch-button" id="game3-button" onClick={switch_game_button}>Game3</div>
                     </div>
                     
-                    <div className="projects-content ">
+                    <div className="projects-content">
                         <div className="" id="chess-content">
                             <div id="left-chess-content">
-                                <img src={ chess } className="chess-logo" alt="Photo"/>
+                                <img src={ chess } className="chess-logo prevention" alt="Photo"/>
                                 <div className="game-text" id="chess-text1">
                                     Chess is a board game of strategic skill for two players, played on a chequered board on which each playing piece is moved according to precise rules. The object is to put the opponent's king under a direct attack from which escape is impossible (checkmate).
                                 </div>
@@ -120,7 +120,7 @@ const HomePage: React.FC = (() => {
                                 <div className="game-text" id="chess-text2">
                                 In this chess game that I created in Python, you play against a bot programmed with advanced algorithms that make it a formidable opponent. The game followed the classic rules of chess, with the objective being to checkmate the opponent's king.
                                 </div>
-                                <div className="play-button" id="chess-play-button">Play it!</div>
+                                <div className="play-button prevention" id="chess-play-button">Play it!</div>
                             </div>
                         </div>
 
