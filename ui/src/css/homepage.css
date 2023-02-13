@@ -77,6 +77,7 @@ h1 {
 
 .show-more {
     margin-top: .5rem;
+    width: 8rem;
     cursor: pointer;
     color: var(--orange);
 }
