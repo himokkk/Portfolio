@@ -63,7 +63,7 @@ const HomePage: React.FC = (() => {
                         </div>
                     </div>
             
-                    <div className="circle float-left">
+                    <div className="circle prevent-select float-left">
                         <img src={photo} className="photo float-left" alt="Photo"/>
                     </div>
                     <div className="introduction-right float-left">
@@ -77,7 +77,7 @@ const HomePage: React.FC = (() => {
                 </div>
             </div>
             
-            <div className="socials" id="socials">
+            <div className="socials prevent-select" id="socials">
             <a className="color-white" href={github_url} target="_blank">
                 <div className="social float-left">
                     <img src={ github } className="logo" alt="Photo"/>

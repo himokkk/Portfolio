@@ -5,7 +5,7 @@ import '../css/navbar.css';
 
 const NavBar = (() => {
     return (
-        <div className="navbar">
+        <div className="navbar prevent-select">
            <div className="navbar-button float-left" id="nameButton">🍊Paweł</div> 
            <div className="navbar-button float-left" id="homeButton">Home</div> 
            <div className="navbar-button float-left" id="aboutButton">About</div> 
