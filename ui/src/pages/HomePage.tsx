@@ -120,7 +120,9 @@ const HomePage: React.FC = (() => {
                                 <div className="game-text" id="chess-text2">
                                 In this chess game that I created in Python, you play against a bot programmed with advanced algorithms that make it a formidable opponent. The game followed the classic rules of chess, with the objective being to checkmate the opponent's king.
                                 </div>
-                                <div className="play-button prevention" id="chess-play-button">Play it!</div>
+                                <a href="/#/chess">
+                                    <div className="play-button prevention" id="chess-play-button">Play it!</div>
+                                </a>
                             </div>
                         </div>
 

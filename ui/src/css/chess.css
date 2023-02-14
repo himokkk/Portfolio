@@ -1,0 +1,57 @@
+.container {
+    width: 100%;
+    height: 40rem;
+    background-color: var(--light-gray);
+    color: var(--white);
+    padding-top: 10rem;
+}
+
+.board {
+    border: 1px solid #ccc;
+    width: 32rem;
+    margin:auto;
+}
+  
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.square {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.black {
+    background-color: #b58863;
+}
+
+.white {
+    background-color: #f0d9b5;
+}
+
+.black-font {
+    color: #b58863;
+}
+
+.white-font {
+    color: #f0d9b5;
+}
+
+.number_cooridantes {
+    font-size: 1.5rem;
+    position: absolute;
+    margin-top: -2.2rem;
+    margin-left: -2.5rem;
+}
+
+.letter_cooridantes {
+    font-size: 1.5rem;
+    position: absolute;
+    margin-top: 2.2rem;
+    margin-left: 2.5rem;
+} 
