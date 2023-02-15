@@ -3,7 +3,8 @@ import React, { useState, useEffect } from 'react';
 import '../css/basic.css';
 import '../css/homepage.css';
 
-import photo from '../assets/photo.png';
+import IntroductionComponent from '../components/IntroductionComponent';
+
 import slack from '../assets/slack.svg';
 import github from '../assets/github.svg';
 import linkedin from '../assets/linkedin.svg';
@@ -46,56 +47,34 @@ const HomePage: React.FC = (() => {
         const new_content_div = document.getElementById(id+"-content") as HTMLDivElement;
         new_content_div.style.display = "flex";
         setSelectedGame(id);
-
-        console.log(window.scrollY);
     });
 
     return (
         <div className="content clear-both">
             <div id="introduction">
-                <div className="intruduction-content">
-                    <div className="greeting float-left">
-                        <h3>Hi, I`m</h3>
-                        <h1> Paweł Kwieciński</h1>
-                        <hr className="introduction-line float-left"/>
-                        <div className="description1"> 
-                            I am a student of Computer Science. I have been interested in maths and programming since middle school. 
-                        </div>
-                    </div>
-            
-                    <div className="circle prevent-select float-left">
-                        <img src={photo} className="photo float-left" alt="Photo"/>
-                    </div>
-                    <div className="introduction-right float-left">
-                        <h2>Software delevoper</h2>
-                        <hr className="introduction-line float-left"/>
-                        <div className="description2">
-                            Mostly interesed in Python, C++, JavaScript/TypeScript
-                        </div>
-                        <div className="show-more">show more {"->"}</div>   
-                    </div>
-                </div>
+                <IntroductionComponent/>
             </div>
-            
-            <div className="socials prevent-select" id="socials">
-            <a className="color-white" href={github_url} target="_blank">
-                <div className="social float-left">
-                    <img src={ github } className="logo" alt="Photo"/>
-                    Github
+            <div>
+                <div className="socials prevent-select" id="socials">
+                <a className="color-white" href={github_url} target="_blank">
+                    <div className="social float-left">
+                        <img src={ github } className="logo" alt="Photo"/>
+                        Github
+                    </div>
+                    </a>
+                    <a className="color-white" href={linkedin_url} target="_blank">
+                        <div className="social float-left">
+                            Linked
+                            <img src={ linkedin } className="linkedin-logo" alt="Photo"/>
+                        </div>
+                    </a>
+                    <a className="color-white" href={slack_url} target="_blank">
+                        <div className="social float-left">
+                            <img src={ slack } className="logo" alt="Photo"/>
+                            slack   
+                        </div>
+                    </a>
                 </div>
-                </a>
-                <a className="color-white" href={linkedin_url} target="_blank">
-                    <div className="social float-left">
-                        Linked
-                        <img src={ linkedin } className="linkedin-logo" alt="Photo"/>
-                    </div>
-                </a>
-                <a className="color-white" href={slack_url} target="_blank">
-                    <div className="social float-left">
-                        <img src={ slack } className="logo" alt="Photo"/>
-                        slack   
-                    </div>
-                </a>
             </div>
 
             <div id="projects">

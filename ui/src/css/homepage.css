@@ -1,48 +1,9 @@
 .content {
-    margin-left: 0;
     color: var(--white);
 }
 
 #introduction {
-    padding-top: 5%;
-    background-color: var(--light-gray);
-    height: 32rem;
-    width: 100%;
-    display: flex;
-}
-
-.intruduction-content {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 1rem;    
-}
-
-.greeting {
-    z-index: 2;
-    position: relative;
-    margin-top: 6rem;
-    text-align: left;
-    letter-spacing: 2px;
-    line-height: 1.5rem;
-}
-
-.circle {
-    border-radius: 50%;
-    background-color: var(--dark-gray);
-    position: relative;
-    z-index: 1;
-    height: 27rem;
-    width: 27rem;
-    margin-left: -6rem;
-}
-
-.photo {
-    position: absolute;
-    z-index: 3;
-    width: 23rem;
-    margin-left: -11rem;
-    margin-top: -3rem;
+    padding-top: 5.3rem;     
 }
 
 h1 {
