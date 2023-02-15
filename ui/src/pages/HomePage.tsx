@@ -47,6 +47,10 @@ const HomePage: React.FC = (() => {
             <div id="projects">
                <ProjectsComponent/>
             </div>
+
+            <div id="Contact">
+                x
+            </div>
         </div>
     )
 });
