@@ -13,32 +13,33 @@ const ProjectsComponent: React.FC = (() => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-  const handleScroll = () => {
-    const scrollPosition = window.scrollY;
-    const targetDiv = document.getElementById('socials') as HTMLDivElement;
-    const targetPosition = targetDiv.offsetTop;
+    const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+        const targetDiv = document.getElementById('socials') as HTMLDivElement;
+        const targetPosition = targetDiv.offsetTop;
 
-    if (scrollPosition > targetPosition - 300) {
-      setShowDiv(true);
-    }
-    else {
-        setShowDiv(false);
-    }
-  };
-  const switch_game_button = ((event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-    const old_content_div = document.getElementById(selectedGame+"-content") as HTMLDivElement;
-    old_content_div.style.display = "none";
+        if (scrollPosition > targetPosition - 300) {
+        setShowDiv(true);
+        }
+        else {
+            setShowDiv(false);
+        }
+    };
 
-    const div = event.target as HTMLDivElement;
-    const id = div.id.split("-")[0];
+    const switch_game_button = ((event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+        const old_content_div = document.getElementById(selectedGame+"-content") as HTMLDivElement;
+        old_content_div.style.display = "none";
 
-    const new_content_div = document.getElementById(id+"-content") as HTMLDivElement;
-    new_content_div.style.display = "flex";
-    setSelectedGame(id);
-});
+        const div = event.target as HTMLDivElement;
+        const id = div.id.split("-")[0];
+
+        const new_content_div = document.getElementById(id+"-content") as HTMLDivElement;
+        new_content_div.style.display = "flex";
+        setSelectedGame(id);
+    });
 
     return (
-        <div className="projects">
+        <div className="projects prevent-select">
             <div className={showDiv ? 'show-div show' : 'show-div'}>
                 <div className="switch prevention">
                     <div className="switch-button" id="chess-button" onClick={switch_game_button}>Chess</div>
@@ -50,7 +51,7 @@ const ProjectsComponent: React.FC = (() => {
                 <div className="projects-content">
                     <div className="" id="chess-content">
                         <div id="left-chess-content">
-                            <img src={ chess } className="chess-logo prevention" alt="Photo"/>
+                            <img src={ chess } className="chess-logo prevention" alt="chess-logo"/>
                             <div className="game-text" id="chess-text1">
                                 Chess is a board game of strategic skill for two players, played on a chequered board on which each playing piece is moved according to precise rules. The object is to put the opponent's king under a direct attack from which escape is impossible (checkmate).
                             </div>
