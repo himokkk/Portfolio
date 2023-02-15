@@ -4,6 +4,7 @@
     width: 100%;
     display: flex;
 }
+
 .intruduction-content {
     position: relative;
     left: 50%;
@@ -20,7 +21,7 @@
     line-height: 1.5rem;
 }
 
-.circle {
+.circle {    
     border-radius: 50%;
     background-color: var(--dark-gray);
     position: relative;

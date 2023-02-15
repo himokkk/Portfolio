@@ -1,18 +1,20 @@
 :root {
     --light-gray: #363543;
-    --dark-gray: #282834;
     --mid-gray: #3F3E4E;
-    --white: white;
+    --dark-gray: #282834;
+    --darkest-gray: #1D1D26;
+    --white: #FFFDFA;
     --orange: #F6B525;
+    --hover-orange: #f8a01e;
 }
 
 a:link {
-    color: white;
+    color: var(--white);
     text-decoration: none;
 }
 
 a:visited {
-    color: white;
+    color: var(--white);
     text-decoration: none;
 }
 
@@ -44,7 +46,7 @@ a:active {
 }
 
 .color-white {
-    color: white;
+    color: var(--white);
 }
 
 .invisible { 

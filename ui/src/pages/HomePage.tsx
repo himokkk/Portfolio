@@ -5,10 +5,16 @@ import '../css/homepage.css';
 
 import IntroductionComponent from '../components/IntroductionComponent';
 import ProjectsComponent from '../components/ProjectsComponent';
+import EmailSender from '../components/EmailSenderComponent';
 
 import slack from '../assets/slack.svg';
 import github from '../assets/github.svg';
 import linkedin from '../assets/linkedin.svg';
+
+import { IoIosPhonePortrait } from 'react-icons/io';
+import { CiMail } from 'react-icons/ci';
+import { FaCity } from 'react-icons/fa';
+import { AiFillGithub } from 'react-icons/ai';
 
 const HomePage: React.FC = (() => {
     const github_url = "https://github.com/himokkk/";
@@ -48,8 +54,24 @@ const HomePage: React.FC = (() => {
                <ProjectsComponent/>
             </div>
 
-            <div id="Contact">
-                x
+            <div id="contact">
+                <div className="contact-content">
+                    <EmailSender/>
+                    <div className="contact-row">
+                        <div className="info">
+                            <FaCity/> Warsaw
+                        </div>
+                        <div className="info">
+                            <IoIosPhonePortrait/> +48 665 341 306
+                        </div>
+                        <div className="info">
+                            <CiMail/> pawel.kwiecinski@student.uksw.edu.pl
+                        </div>
+                        <div className="info">
+                            <a href={github_url}><AiFillGithub/> github.com/himokkk</a> 
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )

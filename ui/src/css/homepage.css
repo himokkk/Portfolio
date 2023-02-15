@@ -6,9 +6,6 @@
     padding-top: 5.3rem;     
 }
 
-
-
-
 .socials {
     position: absolute;
     left: 50%;
@@ -46,3 +43,51 @@
     background-color: var(--dark-gray);
     padding-top: 6rem;
 }
+
+#contact {
+    background-color: var(--darkest-gray);
+    height: 20rem;  
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.contact-content{
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.contact-row {
+    margin-top: 2rem;
+    text-align: left;
+    width: 19rem;
+    font-size: 0.95rem;
+    padding-top: 1.8rem;
+    position: relative;   
+}
+
+.info {
+    position: relative;   
+    
+    padding: 0.6rem;
+}
+
+#contact-row-2 {
+    margin-left: -6.5rem;
+}
+
+#phone-number {
+
+}
+
+#email {
+
+}
+
+.send-email{ 
+    background-color: var(--dark-gray);
+}
+

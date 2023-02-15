@@ -1,0 +1,59 @@
+.send-email-footer {
+  background-color: var(--darkest-gray);
+  text-align: center;
+}
+
+.send-email-footer h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.send-email-footer form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.email-container {
+  display: flex;
+}
+
+.send-email-footer input,
+.send-email-footer textarea {
+  background-color: var(--light-gray);
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.send-email-footer input{
+  width: 23rem;
+  height: 2rem;
+}
+
+.send-email-footer textarea {
+  resize: none;
+  width: 28.5rem;
+  margin-top: 1rem;
+}
+
+.send-email-footer button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--orange);
+  color: var(--mid-gray);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.send-email-footer button:hover {
+  background-color: var(--hover-orange);
+}
+
+.send-email-footer .disclaimer {
+  font-size: 14px;
+  margin-top: 10px;
+}

@@ -83,12 +83,12 @@ h1 {
     display: flex;
 }
 
-#right-chess-content {
+#left-chess-content {
     height: 100%;
     width: 49.9%;
 }
 
-#left-chess-content {
+#right-chess-content {
     height: 100%;
     width: 49.9%;
 }
