@@ -6,7 +6,8 @@ import '../css/navbar.css';
 const NavBar = (() => {
     return (
         <div className="navbar prevent-select">
-           <div className="navbar-button float-left" id="nameButton">🍊Paweł</div> 
+            <a href="/">
+           <div className="navbar-button float-left" id="nameButton">🍊Paweł</div> </a>
            <div className="navbar-button float-left" id="homeButton">Home</div> 
            <div className="navbar-button float-left" id="aboutButton">About</div> 
            <div className="navbar-button float-left" id="skillsButton">Skills</div> 

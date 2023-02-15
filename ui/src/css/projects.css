@@ -1,0 +1,111 @@
+.projects {
+    background-color: var(--dark-gray);
+    height: 45rem;
+    width: 100%;
+}
+
+.show-div {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.show-div.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.switch {
+    margin-left: 25.5rem;
+    display: flex;
+}
+
+.switch-button {
+    width: 5rem;
+    height: 1.5rem;
+    padding: 1rem 2.5rem;
+    margin: 2rem;
+    background-color: var(--mid-gray);    
+    border: 1px solid var(--orange);
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.projects-content {
+    margin-top: .3rem;
+    margin-left: 25.5rem;
+    border: 1px solid var(--orange);
+    border-radius: 1.5rem;
+    width: 57rem;
+    height: 30rem;
+}
+
+#chess-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#right-chess-content {
+    height: 100%;
+    width: 49.9%;
+}
+
+#left-chess-content {
+    height: 100%;
+    width: 49.9%;
+}
+
+.vertical-line {
+    width: 0.5px;
+    background-color: var(--orange);
+    margin-top: 5%;
+    height: 80%;
+}
+
+.play-button {
+    border-radius: 1rem;
+    background-color: #7FA650;
+    width: 8rem;
+    height: 1.5rem;
+    padding: 1rem;
+    margin: auto;
+}
+
+#chess-play-button {
+    margin-top: 3.5rem;
+    cursor: pointer;
+}
+
+.chess-logo {
+    margin-top: 4rem;
+    width: 10rem;
+}
+
+.game-text {
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+#chess-text1 {
+    margin-top: 1rem;
+}
+
+#chess-text2 {
+    margin-top: 7rem;
+}
+
+#game1-content {
+    padding-left: 10rem;
+    padding-top: 10rem;
+}
+
+#game2-content {
+    padding-left: 10rem;
+    padding-top: 10rem;
+}
+
+#game3-content {
+    padding-left: 10rem;
+    padding-top: 10rem;
+}
