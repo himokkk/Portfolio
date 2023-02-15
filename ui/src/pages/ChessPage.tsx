@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 import '../css/basic.css';
 import '../css/chess.css';
 
+import NavBar from '../components/NavBar';
+
 interface Piece {
   piece: string;
   x: Number;
@@ -120,6 +122,7 @@ const ChessPage: React.FC = (() => {
 
     return (
       <div className="container">
+        <NavBar/>
         <div className="board">
           {rows.map((row: React.ReactElement[]) => (
             <div className="row">

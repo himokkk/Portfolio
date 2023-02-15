@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import '../css/basic.css';
 import '../css/homepage.css';
+import NavBar from '../components/NavBar';
 
 import IntroductionComponent from '../components/IntroductionComponent';
 import ProjectsComponent from '../components/ProjectsComponent';
@@ -17,19 +18,24 @@ import { FaCity } from 'react-icons/fa';
 import { AiFillGithub } from 'react-icons/ai';
 
 const HomePage: React.FC = (() => {
+    const homeRef = useRef(null);
+    const contactRef = useRef(null);
+
     const github_url = "https://github.com/himokkk/";
     const linkedin_url = "https://www.linkedin.com/in/pawe%C5%82-kwieci%C5%84ski-3572881b7/";
     const slack_url = "https://slack.com/";
 
     return (
+        
         <div className="content clear-both">
-            <div id="introduction">
+            <NavBar homeRef={homeRef} contactRef={contactRef}/>
+            <div id="introduction" ref={homeRef}>
                 <IntroductionComponent/>
             </div>
 
             <div>
                 <div className="socials prevent-select" id="socials">
-                <a className="color-white" href={github_url} target="_blank">
+                <a className="color-white" href={ github_url } target="_blank">
                     <div className="social float-left">
                         <img src={ github } className="logo" alt="Photo"/>
                         Github
@@ -54,7 +60,7 @@ const HomePage: React.FC = (() => {
                <ProjectsComponent/>
             </div>
 
-            <div id="contact">
+            <div id="contact" ref={contactRef}>
                 <div className="contact-content">
                     <EmailSender/>
                     <div className="contact-row">
