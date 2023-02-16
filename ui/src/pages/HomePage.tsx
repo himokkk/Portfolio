@@ -26,7 +26,6 @@ const HomePage: React.FC = (() => {
     const slack_url = "https://slack.com/";
 
     return (
-        
         <div className="content clear-both">
             <NavBar homeRef={homeRef} contactRef={contactRef}/>
             <div id="introduction" ref={homeRef}>
