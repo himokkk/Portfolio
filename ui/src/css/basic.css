@@ -52,3 +52,19 @@ a:active {
 .invisible { 
     display: none;
 }
+
+.flex {
+    display: flex;
+}
+
+.block {
+    display: block;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.absolute {
+    position: absolute;
+}

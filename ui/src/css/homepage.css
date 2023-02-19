@@ -91,3 +91,11 @@
     background-color: var(--dark-gray);
 }
 
+.stack {
+    background-color: var(--dark-gray);
+    padding-bottom: 5rem;
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+

@@ -7,10 +7,12 @@ import NavBar from '../components/NavBar';
 import IntroductionComponent from '../components/IntroductionComponent';
 import ProjectsComponent from '../components/ProjectsComponent';
 import EmailSender from '../components/EmailSenderComponent';
+import TechStackComponent from '../components/TechStackComponent';
 
 import slack from '../assets/slack.svg';
 import github from '../assets/github.svg';
 import linkedin from '../assets/linkedin.svg';
+
 
 import { IoIosPhonePortrait } from 'react-icons/io';
 import { CiMail } from 'react-icons/ci';
@@ -57,6 +59,10 @@ const HomePage: React.FC = (() => {
 
             <div id="projects">
                <ProjectsComponent/>
+            </div>
+
+            <div className="stack">
+                <TechStackComponent/>
             </div>
 
             <div id="contact" ref={contactRef}>
