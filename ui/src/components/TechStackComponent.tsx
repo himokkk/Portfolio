@@ -54,13 +54,13 @@ const TechStackComponent = () => {
     });
   }, []);
 
-  const randomSpawnPosition = (centerPoint: Ball, bubble_size: number) => {
+  const randomSpawnPosition = (centerPoint: Ball, bubble_size: number): Vector => {
     let ballPosition: Vector = {
       x: Math.floor(Math.random() * (centerPoint.radius * 2 - bubble_size)),
       y: Math.floor(Math.random() * (centerPoint.radius * 2 - bubble_size)),
     };
-    let distX = ballPosition.x - centerPoint.x - bubble_size / 2;
-    let distY = ballPosition.y - centerPoint.y - bubble_size / 2;
+    let distX = ballPosition.x + bubble_size / 2 - centerPoint.x;
+    let distY = ballPosition.y + bubble_size / 2 - centerPoint.y;
 
     while (
       Math.sqrt(Math.pow(distX, 2) + Math.pow(distY, 2)) >=
@@ -70,8 +70,8 @@ const TechStackComponent = () => {
         x: Math.floor(Math.random() * (centerPoint.radius * 2 - bubble_size)),
         y: Math.floor(Math.random() * (centerPoint.radius * 2 - bubble_size)),
       };
-      distX = ballPosition.x - centerPoint.x - bubble_size / 2;
-      distY = ballPosition.y - centerPoint.y - bubble_size / 2;
+      distX = ballPosition.x + bubble_size / 2 - centerPoint.x;
+      distY = ballPosition.y + bubble_size / 2 - centerPoint.y;
     }
 
     return ballPosition;
@@ -81,7 +81,7 @@ const TechStackComponent = () => {
     ballPosition: Vector,
     centerPoint: Vector,
     velocity: Vector
-  ) => {
+  ): Vector => {
     const normalVector = {
       x: ballPosition.x - centerPoint.x,
       y: ballPosition.y - centerPoint.y,
@@ -108,7 +108,7 @@ const TechStackComponent = () => {
     ball: Ball,
     ballVelocity: Vector,
     circle: Ball
-  ) => {
+  ): Vector => {
     const distance = Math.sqrt(
       Math.pow(ball.x - circle.x, 2) + Math.pow(ball.y - circle.y, 2)
     );
