@@ -465,8 +465,8 @@
     margin-top: 5rem;
     margin-left: 30rem;
     z-index: 1;
-    width: 640px;
-    height: 640px;
+    width: 320px;
+    height: 320px;
     position: absolute;
     border-radius: 50%;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
@@ -492,8 +492,8 @@
 }
 
 #jar .bubble {
-    width: 128px;
-    height: 128px;
+    width: 64px;
+    height: 64px;
     animation: animate 4s linear infinite;
 }
 
