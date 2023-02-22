@@ -265,8 +265,8 @@ const TechStackComponent = () => {
           </div>
         </div>
       </div>
-      //TODO Move it to new Component 
-      {/* <div className="jar-container">
+      {/*TODO Move it to new Component
+       <div className="jar-container">
         <div id="jar">
           <div className="absolute" id="jar-container">
             <div className="jar-row" id="jar-row-1" ref={bubbleRef}>
