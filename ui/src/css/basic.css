@@ -5,6 +5,7 @@
     --darkest-gray: #1D1D26;
     --white: #FFFDFA;
     --orange: #F6B525;
+    --pink: #ff00ff;
     --hover-orange: #f8a01e;
 }
 
@@ -51,4 +52,20 @@ a:active {
 
 .invisible { 
     display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.block {
+    display: block;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.absolute {
+    position: absolute;
 }
