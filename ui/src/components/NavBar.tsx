@@ -5,6 +5,7 @@ import debounce from 'lodash/debounce';
 import '../css/basic.css';
 import '../css/navbar.css';
 
+import ScrollTo from '../functions/ScrollTo';
 
 interface Props {
     homeRef?: React.RefObject<HTMLDivElement>;
@@ -17,7 +18,7 @@ const NavBar = ((props: Props) => {
 
     const home_scroll = ((event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
         if(props.homeRef) {
-            Scroll(props.homeRef);
+            ScrollTo(props.homeRef);
         }
         else {
             navigate("/");
@@ -26,7 +27,7 @@ const NavBar = ((props: Props) => {
 
     const skills_scroll = ((event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
         if(props.skillsRef) {
-            Scroll(props.skillsRef);
+            ScrollTo(props.skillsRef);
         } 
         else {
             navigate("/");
@@ -35,20 +36,11 @@ const NavBar = ((props: Props) => {
 
     const contact_scroll = ((event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
         if(props.contactRef) {
-            Scroll(props.contactRef);
+            ScrollTo(props.contactRef);
         } 
         else {
             navigate("/");
         }
-    })
-
-    const Scroll = ((ref: React.RefObject<HTMLDivElement>) => {
-        const targetElement = ref.current as HTMLDivElement;
-        const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
-        window.scrollTo({
-            top: targetPosition,
-            behavior: 'instant' as ScrollBehavior,
-        });
     })
 
     const [isHome, setIsHome] = useState<Boolean>(false);

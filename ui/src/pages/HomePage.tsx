@@ -13,7 +13,6 @@ import slack from '../assets/slack.svg';
 import github from '../assets/github.svg';
 import linkedin from '../assets/linkedin.svg';
 
-
 import { IoIosPhonePortrait } from 'react-icons/io';
 import { CiMail } from 'react-icons/ci';
 import { FaCity } from 'react-icons/fa';
@@ -32,9 +31,8 @@ const HomePage: React.FC = (() => {
         <div className="content clear-both">
             <NavBar homeRef={homeRef} skillsRef={skillsRef} contactRef={contactRef}/>
             <div id="introduction" ref={homeRef}>
-                <IntroductionComponent/>
+                <IntroductionComponent skillsRef={skillsRef}/>
             </div>
-
             <div>
                 <div className="socials prevent-select" id="socials">
                 <a className="color-white" href={ github_url } target="_blank">

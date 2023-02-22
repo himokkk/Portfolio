@@ -2,9 +2,15 @@ import React from 'react';
 
 import '../css/introduction.css'
 
+import ScrollTo from '../functions/ScrollTo';
+
 import photo from '../assets/photo.png';
 
-const IntroductionComponent: React.FC = (() => {
+interface Props {
+    skillsRef: React.RefObject<HTMLDivElement>;
+}
+
+const IntroductionComponent = ((props: Props) => {
     return (
         <div className="introduction-main">
             <div className="intruduction-content">
@@ -27,7 +33,7 @@ const IntroductionComponent: React.FC = (() => {
                     <div className="description2">
                         Mostly interesed in Python, C++, JavaScript/TypeScript
                     </div>
-                    <div className="show-more">show more {"->"}</div>   
+                    <div className="show-more" onClick={() => {ScrollTo(props.skillsRef)}}>show more {"->"}</div>   
                 </div>
             </div>
         </div>

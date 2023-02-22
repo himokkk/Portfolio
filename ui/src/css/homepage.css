@@ -46,8 +46,8 @@
 
 #skills {
     background-color: var(--dark-gray);
-    
     display: flex;
+    height: 63rem;
     position: relative;
     width: 100%;
 }
