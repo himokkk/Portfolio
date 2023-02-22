@@ -61,7 +61,7 @@ const HomePage: React.FC = (() => {
                <ProjectsComponent/>
             </div>
 
-            <div className="stack">
+            <div id="stack">
                 <TechStackComponent/>
             </div>
 

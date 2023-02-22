@@ -91,7 +91,7 @@
     background-color: var(--dark-gray);
 }
 
-.stack {
+#stack {
     background-color: var(--dark-gray);
     padding-bottom: 5rem;
     display: flex;

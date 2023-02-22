@@ -1,114 +1,245 @@
 :root {
     --python-blue: #3870A1;
     --python-yellow: #FFD344;
-    --react-dark: #222222;
     --react-blue: #00D8FF;
-    --js-yellow: #F0DB4F;
-    --js-black: #222222;
-    --js-svg: #F0DB4F;
-    --ts-blue: #007ACC;
-    --ts-white: #FFFFFF;
-    --ts-svg: #007ACC;
-    --html-orange: #FFAB6B;
-    --html-mid-orange: #F46D5E;
-    --css-blue: #2B77B7;
-    
-    --css-dark-blue: #1B73BA;
-    --html-dark-orange: #E34F26;
-    --django-green: #0C4B33;
-    --docker-blue: #00D8FF;
-    --docker-dark-blue: #357180;
     --cpp-blue: #5C8DBC;
     --cpp-dark-blue: #1A4674;
+    --jar-blue: rgba(85, 177, 201, .3);
+    --jar-border: #00bcff;
 }
 
 .stack-content {
+    height: 37rem;
+    width: 80%;
     position: relative;
+    margin: 0 auto;
+    text-align: center;
     padding: 10rem 0rem;
 }
 
-#python-circle {
-    width: 14rem;
-    height: 14rem;
-    background: linear-gradient( -45deg, #3870A1 50%, #FFD344 50% );  
-    border-radius: 50%;
-    position: relative;
+.stack-content h1 {
+    margin-bottom: 10rem;
+    filter: drop-shadow(0 0 5px black);
 }
 
-.python-logo {
-    margin-top: 2.5rem;
-    width: 65%;
+.stacks {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.stack {
+    width: 15rem;
+    height: 15rem;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: var(--light-gray);
+    box-shadow: 0 10px 10px -10px var(--pink), 0 -10px 10px -10px var(--react-blue);
+}
+
+.stack:hover .name,
+.stack:hover .logo {
+    opacity: 10%;
+}
+
+.stack:hover::before {
+    transform: scaleX(1);
+    opacity: 20%;
+}
+
+.stack::before {
+    content: "";
+    z-index: 4;
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    background-color: var(--darkest-gray);
+    transition: transform 0.2s;
+    transform-origin: 0 0;
+    opacity: 0%;
+    transform: scaleX(0);
+}
+
+.stack:hover .hidden { 
+    padding-left: 2rem;
+    opacity: 100%;
+}
+ 
+.logo {
+    position: relative;
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.name {
+    position: relative;
+    z-index: 2;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hidden {
+    position: absolute;
+    z-index: 5;
+    width: 13rem;
+    height: 8.5rem;
+    margin-top: 6.5rem;
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-align: left;
+    color: #707070;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    opacity: 0;
+    transition: padding-left 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+#python-logo {
+    position: relative;
+    z-index: 1;
+    width: 8rem;
     border: black 1px;
 }
 
-.python {
+#python-name {
     position: relative;
-    margin-top: -36%;
-    width: 65%;
+    z-index: 2;
+    width: 9rem;
+    height: 5rem;
+    margin-top: -4rem;
 }
 
-#python-circle:before {
-    content: "";
+#react-logo {
+    width: 8rem;
+    filter: drop-shadow(0 0 3px var(--react-blue));
+}
+
+#react-name {
+    margin-top: -.5rem;
+    width: 8rem;
+    filter: drop-shadow(0 0 3px var(--react-blue));
+}
+
+#cpp-logo {
+    width: 7rem;
+    height: 7rem;
+    filter: drop-shadow(0 0 5px var(--cpp-dark-blue));
+}
+
+#cpp-name {
+    margin-top: -.2rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: white;
+}
+
+#docker-logo {
+    width: 10rem;
+    filter: drop-shadow(0 0 3px var(--react-blue));
+}
+
+#html-logo {
+    width: 5rem;
+    filter: drop-shadow(0 0 3px var(--docker-dark-blue));
+}
+
+/* 
+.bubble-container {
     position: absolute;
-    inset: -1rem;
-    padding: 0.6rem;
-    border-radius: 50%; 
-    background: linear-gradient( 78deg, var(--python-blue) 50%, var(--python-yellow) 50% ); 
-    -webkit-mask:
-      linear-gradient(#000 0 0) content-box,
-      linear-gradient(#000 0 0);
-    -webkit-mask-composite: xor;
-            mask-composite: intersect
 }
 
-#python-circle:before,
-#python-circle:after {
-    transition:.5s, 99999s 99999s transform;
-}
-
-#python-circle:hover:before,
-#python-circle:hover:after {
-    transform: rotate(36000deg);
-    transition: .5s,600s linear transform;
-}
-
-#python-circle:before {
-    background-color: #222;
-    border: 2px solid #333;
-}
-  
-#python-circle:after {
-    content: "";
-    position: absolute;
-    inset: -2rem;
-    background:
-        radial-gradient(200px at left  400px top 150px,var(--python-yellow) 100%,#0000),
-        radial-gradient(200px at right 400px bottom 150px,var(--python-blue) 100%,#0000);
-    filter: blur(120px);
-    opacity: .5;
-}
-
-#python-circle:hover {
-  animation: pulse 1s ease-out infinite;
-}
-
-#python-stack {
+.bubble {
     display: flex;
-    margin-top: 2rem;
-}
-
-#react-circle {
-    margin-left: 4rem;
-    width: 14rem;
-    height: 14rem;
-    background-color: var(--react-dark); 
-    border-radius: 50%;
     position: relative;
-    box-shadow: 0 0 1rem 0 var(--react-blue);
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background-color: #000;
 }
 
-#react-circle:hover {
-    animation: react-pulse 2s ease-out infinite;
+.bubble span {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.bubble span:nth-child(1) {
+    inset: -2px;
+    border-left: 12px solid var(--react-blue);
+    border-top: 12px solid var(--react-blue);
+    filter: blur(1.5px);
+}
+
+.bubble span:nth-child(2) {
+    inset: -2px;
+    border-right: 12px solid var(--react-blue);
+    border-bottom: 12px solid var(--react-blue);
+    filter: blur(1.5px);
+}
+
+#jar {
+    margin-top: 5rem;
+    z-index: 3;
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid var(--jar-border);
+    background: linear-gradient(135deg, var(--jar-blue), var(--jar-blue));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+#jar::before {
+    content: "";
+    z-index: 4;
+    position: absolute;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 15px solid var(--jar-border);
+    box-shadow: 0 10px 0 var(--jar-blue);
+    top: -0.7rem;
+    width: 30%;
+    height: 7%;
+}
+
+#jar::after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+
+    filter: blur(1px);
+    opacity: 5%;
+}
+
+#jar-container .bubble-container {
+    position: absolute;
+    z-index: 1;
+}
+
+#jar-container .bubble {
+    width: 64px;
+    height: 64px;
+    animation: animate 4s linear infinite;
+}
+
+.jar-container {
+    margin-top: 10rem;
+    margin-left: 30rem;
+}
+
+@keyframes animate{
+	0%{
+		filter: hue-rotate(360deg);
+	}
 }
 
 @keyframes react-pulse {
@@ -121,397 +252,4 @@
     100% {
       box-shadow: 0 0 1rem 0 var(--react-blue);
     }
-}
-
-.react-logo {
-    margin-top: 7%;
-    width: 65%;
-    filter: drop-shadow(0 0 5px var(--react-blue));
-}
-
-.react {
-    position: relative;
-    margin-top: -1rem;
-    width: 40%;
-    filter: drop-shadow(0 0 5px var(--react-blue));
-}
-
-
-#front-stack-1 div {
-    margin-bottom: 1rem;
-}
-
-#front-stack-2 {
-    margin-top: 1rem;
-    display: flex;
-}
-
-#front-stack-2 div {
-    margin-left: 1rem;
-}
-
-#javascript-circle {
-    background-color: var(--js-yellow);
-    width: 8rem;
-    height: 8rem;
-    border-radius: 50%;
-    box-shadow: 0 0 1rem 0.1rem var(--js-black);
-}
-
-#javascript-circle:hover {
-    --js-svg: var(--js-yellow);
-    filter: drop-shadow(0 0 1px var(--js-yellow));
-    background-color: var(--js-black);
-    box-shadow: 0 0 1rem 0.1rem var(--js-yellow);
-}
-.javascript-logo {
-    position: relative;
-    width: 45%;
-    filter: drop-shadow(0 0 1px var(--js-black));
-}
-
-#typescript-circle {
-    background-color: var(--ts-blue);
-    border-radius: 50%;
-    width: 8rem;
-    height: 8rem;
-    box-shadow: 0 0 1rem 0.1rem var(--ts-white);
-}
-
-.typescript-logo {
-    position: relative;
-    width: 45%;
-    filter: drop-shadow(0 0 1px var(--ts-white));
-}
-
-#typescript-circle:hover {
-    --ts-svg: var(--ts-blue);
-    filter: drop-shadow(0 0 1px var(--ts-blue));
-    background-color: var(--ts-white);
-    box-shadow: 0 0 1rem 0.1rem var(--ts-blue);
-}
-
-#css-circle {
-    margin-left: 2rem;
-    width: 8rem;
-    height: 8rem;
-    background-color: var(--css-dark-blue);
-    border-radius: 50%;
-    box-shadow: 0 0 1rem 0.1rem var(--css-blue);
-}
-
-.css-logo {
-    position: relative;
-    margin-top: 1.3rem;
-    width: 40%;
-    filter: drop-shadow(0 0 1px var(--react-blue));
-}
-
-.css {
-    color: black;
-    font-weight: 700;
-    font-size: 1.5rem;
-}
-
-#html-circle {
-    margin-left: 2rem;
-    width: 8rem;
-    height: 8rem;
-    background-color: var(--html-dark-orange);
-    border-radius: 50%;
-    box-shadow: 0 0 1rem 0.05rem var(--html-mid-orange);
-}
-
-.html {
-    color: black;
-    font-weight: 700;
-    font-size: 1.5rem;
-}
-
-#django-circle{
-    margin-left: 2rem;
-    background-color: var(--django-green);
-    border-radius: 50%;
-    width: 8rem;
-    height: 8rem;
-    box-shadow: 0 0 1rem 0.05rem var(--white);
-}
-
-.django-logo {
-    margin-top: 35%;
-    width: 80%;
-    filter: drop-shadow(0 0 1px var(--white));
-}
-
-
-#cpp-circle{
-    margin-left: 2rem;
-    background-color: var(--cpp-blue);
-    border-radius: 50%;
-    width: 11rem;
-    height: 11rem;
-    box-shadow: 0 0 1rem 0.4rem var(--cpp-dark-blue);
-}
-
-.cpp-logo {
-    margin-top: 18%;
-    width: 60%;
-    filter: drop-shadow(0 0 5px var(--cpp-dark-blue));
-}
-
-.x{
-    margin-bottom: 100rem;
-}
-
-.bubble-container {
-    position: absolute;
-}
-
-.bubble {
-    display: flex;
-    position: relative;
-    width: 20rem;
-    height: 20rem;
-    border-radius: 50%;
-    background-color: #000;
-    box-shadow: inset 0 0 25px rgba(255,255, 255,0.25);
-}
-
-.bubble span {
-    position: absolute;
-    border-radius: 50%;
-}
-
-
-.bubble span:nth-child(1) {
-    inset: 10px;
-    border-left: 15px solid var(--react-blue);
-    filter: blur(8px);
-}
-
-.bubble span:nth-child(2) {
-    inset: 10px;
-    border-right: 15px solid var(--react-blue);
-    filter: blur(8px);
-}
-
-#react-logo {
-    margin-left: 5rem;
-    margin-top: 1rem;
-    width: 10rem;
-    filter: drop-shadow(0 0 5px var(--react-blue));
-}
-
-
-#js-bubble .bubble{
-    width: 10rem;
-    height: 10rem;
-}
-
-#js-bubble .bubble span:nth-child(1) {
-    border-left: 10px solid var(--js-yellow);
-}
-
-#js-bubble .bubble span:nth-child(2) {
-    border-right: 10px solid var(--js-yellow);
-}
-
-#js-bubble div {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-#js-logo {
-    width: 40%;
-    height: 40%;
-    margin-top: 30%; 
-    filter: drop-shadow(0 0 5px var(--js-yellow));
-}
-
-#ts-bubble .bubble {
-    width: 10rem;
-    height: 10rem;
-}
-
-#ts-bubble .bubble span:nth-child(1) {
-    border-left: 15px solid var(--ts-blue);
-}
-
-#ts-bubble .bubble span:nth-child(2) {
-    border-right: 15px solid var(--ts-blue);
-}
-
-#ts-bubble div {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-#ts-logo {
-    width: 70%;
-    height: 70%;
-    margin-top: 18%; 
-    margin-left: -20%;
-    filter: drop-shadow(0 0 15px var(--ts-blue));
-}
-
-#docker-bubble .bubble {
-    width: 10rem;
-    height: 10rem;
-}
-
-#docker-logo {
-    margin-top: 25%;
-    width: 53%;
-    filter: drop-shadow(0 0 3px var(--docker-dark-blue));
-}
-
-#docker-bubble .bubble span:nth-child(1) {
-    border-left: 10px solid var(--docker-blue);
-}
-
-#docker-bubble .bubble span:nth-child(2) {
-    border-right: 10px solid var(--docker-blue);
-}
-
-#django-bubble .bubble {
-    width: 10rem;
-    height: 10rem;
-}
-
-#django-logo {
-    margin-top: 43%;
-    width: 53%;
-    filter: drop-shadow(0 0 3px var(--docker-dark-blue));
-}
-
-#django-bubble .bubble span:nth-child(1) {
-    border-left: 15px solid var(--django-green);
-}
-
-#django-bubble .bubble span:nth-child(2) {
-    border-right: 15px solid var(--django-green);
-}
-
-#html-bubble .bubble {
-    width: 10rem;
-    height: 10rem;
-}
-
-#html-logo {
-    margin-top: 20%;
-    margin-bottom: -1rem;
-    width: 40%;
-    filter: drop-shadow(0 0 3px var(--docker-dark-blue));
-}
-
-#html-bubble .bubble span:nth-child(1) {
-    border-left: 10px solid var(--html-dark-orange);
-}
-
-#html-bubble .bubble span:nth-child(2) {
-    border-right: 10px solid var(--html-dark-orange);
-}
-
-#css-bubble .bubble {
-    width: 10rem;
-    height: 10rem;
-}
-
-#css-bubble .bubble div {
-    margin-top: 1rem;
-}
-
-#css-logo {
-    margin-top: 10%;
-    margin-bottom: -.5rem;
-    width: 40%;
-    filter: drop-shadow(0 0 3px var(--docker-dark-blue));
-}
-
-#css-bubble .bubble span:nth-child(1) {
-    border-left: 10px solid var(--css-dark-blue);
-}
-
-#css-bubble .bubble span:nth-child(2) {
-    border-right: 10px solid var(--css-dark-blue);
-}
-
-#cpp-bubble .bubble {
-    width: 10rem;
-    height: 10rem;
-}
-
-#cpp-bubble .bubble div {
-    margin-top: 1rem;
-}
-
-#cpp-logo {
-    margin-top: 13%;
-    width: 45%;
-    filter: drop-shadow(0 0 3px var(--docker-dark-blue));
-}
-
-#cpp-bubble .bubble span:nth-child(1) {
-    border-left: 15px solid var(--cpp-dark-blue);
-}
-
-#cpp-bubble .bubble span:nth-child(2) {
-    border-right: 15px solid var(--cpp-dark-blue);
-}
-
-#jar {
-    margin-top: 5rem;
-    margin-left: 30rem;
-    z-index: 1;
-    width: 320px;
-    height: 320px;
-    position: absolute;
-    border-radius: 50%;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border:1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}
-
-#jar:before {
-    content: "";
-    position: absolute;
-    transform: translateX(-50%);
-    border-radius: 50%;
-    border: 1rem solid #444;
-    box-shadow: 0 10px #222;
-    width: 40%;
-    height: 7%;
-}
-
-#jar .bubble-container {
-    z-index: 0;
-}
-
-#jar .bubble {
-    width: 64px;
-    height: 64px;
-    animation: animate 4s linear infinite;
-}
-
-@keyframes animate{
-	0%{
-		filter: hue-rotate(360deg);
-	}
-}
-
-.jar-row {
-}
-
-#jar-container {
-}
-
-#jar-row-1 {
-}
-
-#jar-row-2 {
-}
-
+} */
