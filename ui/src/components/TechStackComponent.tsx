@@ -229,16 +229,16 @@ const TechStackComponent = () => {
       <h1>My Tech Stack:</h1>
       <div className="stacks">
         <div className="stack"  id="python-stack">
-          <img src={python_logo} className="logo"  id="python-logo" alt="Photo" />
-          <img src={python} className="name" id="python-name" alt="Photo" />
+          <img src={python_logo} className="logo"  id="python-logo" alt="Python logo"/>
+          <img src={python} className="name" id="python-name" alt="Python name"/>
           <div className="hidden">
             - Django REST framework<br/> 
             - Flask<br/>
           </div>
         </div>
         <div className="stack" id="react-stack">
-          <img src={react_logo} className="logo" id="react-logo" alt="Photo" />
-          <img src={react} className="name" id="react-name" alt="Photo" />
+          <img src={react_logo} className="logo" id="react-logo" alt="React logo"/>
+          <img src={react} className="name" id="react-name" alt="React name"/>
           <div className="hidden">
             <div>
               - JavaScript<br/>
@@ -248,7 +248,7 @@ const TechStackComponent = () => {
           </div>
         </div>
         <div className="stack" id="docker-stack"> 
-          <img src={DockerLogo} className="logo" id="docker-logo" alt="Photo" />
+          <img src={DockerLogo} className="logo" id="docker-logo" alt="Docker logo" />
           <div className="hidden">
             - Docker<br/>
             - Docker-compose<br/>
@@ -256,7 +256,7 @@ const TechStackComponent = () => {
           </div>
         </div>        
         <div className="stack" id="cpp-stack">
-          <img src={CppLogo} className="logo" id="cpp-logo" alt="Photo" />
+          <img src={CppLogo} className="logo" id="cpp-logo" alt="Cpp logo" />
           <div className="name" id="cpp-name">Cpp</div>
           <div className="hidden">
             - Academic level<br/>
