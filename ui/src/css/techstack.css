@@ -42,6 +42,10 @@
     box-shadow: 0 10px 10px -10px var(--pink), 0 -10px 10px -10px var(--react-blue);
 }
 
+.stack:hover {
+    box-shadow: 0 10px 10px -9px var(--pink), 0 -10px 10px -9px var(--react-blue);
+}
+
 .stack:hover .name,
 .stack:hover .logo {
     opacity: 10%;
