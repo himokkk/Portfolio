@@ -227,7 +227,7 @@ const TechStackComponent = () => {
   // }, []);
 
   return (
-    <div className="stack-content">
+    <div className="stack-content prevent-select">
       <h1>My Tech Stack:</h1>
       <div className="stacks">
         <div className="stack"  id="python-stack">

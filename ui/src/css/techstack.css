@@ -29,6 +29,24 @@
     justify-content: center;
 }
 
+.stacks::before,
+.stacks::after {
+    content: "Hover them";
+    writing-mode: vertical-rl;
+    font-size: 2.5rem;
+    color: var(--pink);
+    text-shadow: 0 0 10px var(--pink),
+    0 0 20px var(--pink),
+    0 0 40px var(--pink),
+    0 0 80px var(--pink);
+}
+
+.stacks:hover::before,
+.stacks:hover::after  {
+    content: "Be gentle!";
+    transition: content 0.2s ease;
+}
+
 .stack {
     width: 15rem;
     height: 15rem;
@@ -43,7 +61,7 @@
 }
 
 .stack:hover {
-    box-shadow: 0 10px 10px -9px var(--pink), 0 -10px 10px -9px var(--react-blue);
+    box-shadow: 0 10px 10px -8px var(--pink), 0 -10px 10px -8px var(--react-blue);
 }
 
 .stack:hover .name,
@@ -77,13 +95,13 @@
 .logo {
     position: relative;
     z-index: 1;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
 }
 
 .name {
     position: relative;
     z-index: 2;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
 }
 
 .hidden {
@@ -96,10 +114,11 @@
     font-weight: 900;
     text-align: left;
     color: #707070;
-    transition: transform 0.5s;
+    transition: transform 0.2s;
     transform-origin: 0 0;
     opacity: 0;
-    transition: padding-left 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transition: padding-left 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    text-shadow: 0 0 10px black;
 }
 
 #python-logo {
