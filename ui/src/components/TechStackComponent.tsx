@@ -280,8 +280,6 @@ const TechStackComponent = () => {
           </div>
         </div>
       </div> */}
-
-      <div className="x"></div>
     </div>
   );
 };

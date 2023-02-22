@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 
 import '../css/basic.css';
 import '../css/homepage.css';
@@ -21,6 +21,7 @@ import { AiFillGithub } from 'react-icons/ai';
 
 const HomePage: React.FC = (() => {
     const homeRef = useRef(null);
+    const skillsRef = useRef(null);
     const contactRef = useRef(null);
 
     const github_url = "https://github.com/himokkk/";
@@ -29,7 +30,7 @@ const HomePage: React.FC = (() => {
 
     return (
         <div className="content clear-both">
-            <NavBar homeRef={homeRef} contactRef={contactRef}/>
+            <NavBar homeRef={homeRef} skillsRef={skillsRef} contactRef={contactRef}/>
             <div id="introduction" ref={homeRef}>
                 <IntroductionComponent/>
             </div>
@@ -61,7 +62,7 @@ const HomePage: React.FC = (() => {
                <ProjectsComponent/>
             </div>
 
-            <div id="stack">
+            <div id="skills" ref={skillsRef}>
                 <TechStackComponent/>
             </div>
 

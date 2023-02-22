@@ -44,6 +44,14 @@
     padding-top: 6rem;
 }
 
+#skills {
+    background-color: var(--dark-gray);
+    
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
 #contact {
     background-color: var(--darkest-gray);
     height: 20rem;  
@@ -90,12 +98,3 @@
 .send-email{ 
     background-color: var(--dark-gray);
 }
-
-#stack {
-    background-color: var(--dark-gray);
-    padding-bottom: 5rem;
-    display: flex;
-    position: relative;
-    width: 100%;
-}
-
