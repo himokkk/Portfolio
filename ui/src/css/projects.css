@@ -1,37 +1,9 @@
-h1 {
-    font-size: 2.5rem;
-}
+
 
 .projects {
     background-color: var(--dark-gray);
     height: 45rem;
     width: 100%;
-}
-
-.description1 {
-    position: relative;
-    width: 15rem;
-}
-
-.description2 {
-    position: relative;
-    width: 15rem;
-}
-
-.introduction-right {
-    margin-left: -2rem;
-    z-index: 2;
-    position: relative;
-    margin-top: 3rem;
-    text-align: left;
-    letter-spacing: 2px;
-    line-height: 1.5rem;
-}
-
-.introduction-line {
-    width: 70%;
-    margin-bottom: 1rem;
-    border: 1px solid var(--orange);
 }
 
 .show-div {
