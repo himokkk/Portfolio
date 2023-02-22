@@ -6,6 +6,7 @@ import python_logo from "../assets/techstack/python-logo.svg";
 import python from "../assets/techstack/python.svg";
 import react_logo from "../assets/techstack/react-logo.svg";
 import react from "../assets/techstack/react.svg";
+//TODO Move it to new Component 
 // import { ReactComponent as JavaScriptLogo } from "../assets/techstack/javascript-logo.svg";
 // import { ReactComponent as TypeScriptLogo } from "../assets/techstack/typescript-logo.svg";
 
@@ -15,7 +16,7 @@ import react from "../assets/techstack/react.svg";
 // import DjangoLogo from "../assets/techstack/django.png";
 import DockerLogo from "../assets/techstack/docker-logo.svg";
 import CppLogo from "../assets/techstack/cpp-logo.svg";
-
+//TODO Move it to new Component 
 // interface Vector {
 //   x: number;
 //   y: number;
@@ -28,6 +29,7 @@ import CppLogo from "../assets/techstack/cpp-logo.svg";
 // }
 
 const TechStackComponent = () => {
+  //TODO Move it to new Component 
   // const bubbleRef = useRef(null);
 
   // const getRandomColor = (): string => {
@@ -263,7 +265,7 @@ const TechStackComponent = () => {
           </div>
         </div>
       </div>
-
+      //TODO Move it to new Component 
       {/* <div className="jar-container">
         <div id="jar">
           <div className="absolute" id="jar-container">
