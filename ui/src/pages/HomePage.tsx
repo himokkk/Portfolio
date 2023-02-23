@@ -35,21 +35,21 @@ const HomePage: React.FC = () => {
             </div>
             <div>
                 <div className="socials prevent-select" id="socials">
-                    <a className="color-white" href={github_url} target="_blank">
+                    <a className="color-white" href={github_url} rel="noreferrer" target="_blank">
                         <div className="social float-left">
-                            <img src={github} className="logo" alt="Photo" />
+                            <img src={github} className="logo" alt="Github logo" />
                             Github
                         </div>
                     </a>
-                    <a className="color-white" href={linkedin_url} target="_blank">
+                    <a className="color-white" href={linkedin_url} rel="noreferrer" target="_blank">
                         <div className="social float-left">
                             Linked
-                            <img src={linkedin} className="linkedin-logo" alt="Photo" />
+                            <img src={linkedin} className="linkedin-logo" alt="Linkedin logo" />
                         </div>
                     </a>
-                    <a className="color-white" href={slack_url} target="_blank">
+                    <a className="color-white" href={slack_url} rel="noreferrer" target="_blank">
                         <div className="social float-left">
-                            <img src={slack} className="logo" alt="Photo" />
+                            <img src={slack} className="logo" alt="Slack logo" />
                             slack
                         </div>
                     </a>

@@ -25,9 +25,8 @@ const IntroductionComponent = (props: Props) => {
                 </div>
 
                 <div className="circle prevent-select float-left">
-                    <img src={photo} className="photo float-left" alt="Photo" />
+                    <img src={photo} className="photo float-left" alt="me" />
                 </div>
-
                 <div className="introduction-right float-left">
                     <h2>Software delevoper</h2>
                     <hr className="introduction-line float-left" />

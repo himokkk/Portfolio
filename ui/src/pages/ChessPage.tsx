@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import "../css/basic.css";
 import "../css/chess.css";
@@ -72,7 +72,7 @@ const ChessPage: React.FC = () => {
             const coordinateColor = squareColor === "black" ? "white" : "black";
             const key = `${i}-${j}`;
 
-            if (i == 7 && j == 0) {
+            if (i === 7 && j === 0) {
                 row.push(
                     <div key={key} id={key} onClick={onSquareClick} className={`square ${squareColor}`}>
                         <div className={`number_cooridantes ${coordinateColor}-font`}>{i + 1}</div>
@@ -80,14 +80,14 @@ const ChessPage: React.FC = () => {
                         {board[i][j]}
                     </div>,
                 );
-            } else if (i == 7) {
+            } else if (i === 7) {
                 row.push(
                     <div key={key} id={key} onClick={onSquareClick} className={`square ${squareColor}`}>
                         <div className={`letter_cooridantes ${coordinateColor}-font`}>{GetCharFromA(j)}</div>
                         {board[i][j]}
                     </div>,
                 );
-            } else if (j == 0) {
+            } else if (j === 0) {
                 row.push(
                     <div key={key} id={key} onClick={onSquareClick} className={`square ${squareColor}`}>
                         <div className={`number_cooridantes ${coordinateColor}-font`}>{i + 1}</div>

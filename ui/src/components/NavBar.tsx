@@ -45,21 +45,21 @@ const NavBar = (props: Props) => {
     const [isContact, setIsContact] = useState<Boolean>(false);
 
     useEffect(() => {
+        const handleScroll = () => {
+            if (props.homeRef) {
+                checkDivVisibility(props.homeRef, setIsHome);
+            }
+            if (props.skillsRef) {
+                checkDivVisibility(props.skillsRef, setIsSkills);
+            }
+            if (props.contactRef) {
+                checkDivVisibility(props.contactRef, setIsContact);
+            }
+        };
+
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-
-    const handleScroll = () => {
-        if (props.homeRef) {
-            checkDivVisibility(props.homeRef, setIsHome);
-        }
-        if (props.skillsRef) {
-            checkDivVisibility(props.skillsRef, setIsSkills);
-        }
-        if (props.contactRef) {
-            checkDivVisibility(props.contactRef, setIsContact);
-        }
-    };
+    }, [props.contactRef, props.homeRef, props.skillsRef]);
 
     const checkDivVisibility = (
         ref: React.RefObject<HTMLDivElement>,
