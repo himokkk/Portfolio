@@ -7,10 +7,10 @@
 
 .board {
     width: 32rem;
-    margin:auto;
+    margin: auto;
     padding-top: 10rem;
 }
-  
+
 .row {
     display: flex;
     flex-direction: row;
@@ -53,4 +53,4 @@
     position: absolute;
     margin-top: 2.2rem;
     margin-left: 2.5rem;
-} 
+}

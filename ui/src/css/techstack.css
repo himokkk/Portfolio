@@ -1,10 +1,10 @@
 :root {
-    --python-blue: #3870A1;
-    --python-yellow: #FFD344;
-    --react-blue: #00D8FF;
-    --cpp-blue: #5C8DBC;
-    --cpp-dark-blue: #1A4674;
-    --jar-blue: rgba(85, 177, 201, .3);
+    --python-blue: #3870a1;
+    --python-yellow: #ffd344;
+    --react-blue: #00d8ff;
+    --cpp-blue: #5c8dbc;
+    --cpp-dark-blue: #1a4674;
+    --jar-blue: rgba(85, 177, 201, 0.3);
     --jar-border: #00bcff;
 }
 
@@ -19,7 +19,8 @@
 
 .stack-content h1 {
     margin-bottom: 10rem;
-    filter: drop-shadow(0 0 5px black);
+    color: var(--react-blue);
+    text-shadow: 0 0 5px var(--react-blue), 0 0 20px black;
 }
 
 .stacks {
@@ -35,14 +36,11 @@
     writing-mode: vertical-rl;
     font-size: 2.5rem;
     color: var(--pink);
-    text-shadow: 0 0 10px var(--pink),
-    0 0 20px var(--pink),
-    0 0 40px var(--pink),
-    0 0 80px var(--pink);
+    text-shadow: 0 0 10px var(--pink), 0 0 20px var(--pink), 0 0 40px var(--pink), 0 0 80px var(--pink);
 }
 
 .stacks:hover::before,
-.stacks:hover::after  {
+.stacks:hover::after {
     content: "Be gentle!";
     transition: content 0.2s ease;
 }
@@ -87,11 +85,11 @@
     transform: scaleX(0);
 }
 
-.stack:hover .hidden { 
+.stack:hover .hidden {
     padding-left: 2rem;
     opacity: 100%;
 }
- 
+
 .logo {
     position: relative;
     z-index: 1;
@@ -142,7 +140,7 @@
 }
 
 #react-name {
-    margin-top: -.5rem;
+    margin-top: -0.5rem;
     width: 8rem;
     filter: drop-shadow(0 0 3px var(--react-blue));
 }
@@ -154,7 +152,7 @@
 }
 
 #cpp-name {
-    margin-top: -.2rem;
+    margin-top: -0.2rem;
     font-size: 2.5rem;
     font-weight: 900;
     color: white;

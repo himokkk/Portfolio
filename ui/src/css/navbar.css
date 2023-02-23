@@ -9,7 +9,7 @@
 
 .navbar-button {
     margin: 1.5rem;
-    padding: .5rem;
+    padding: 0.5rem;
     margin-left: 1rem;
     cursor: pointer;
 }
@@ -22,6 +22,7 @@
     margin-left: 28rem;
 }
 
-.color-orange{
-    color: var(--orange);
+.color-orange {
+    color: var(--pink);
+    text-shadow: 0 0 10px var(--pink), 0 0 20px var(--pink), 0 0 40px var(--pink), 0 0 80px var(--pink);
 }

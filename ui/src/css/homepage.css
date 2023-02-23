@@ -3,13 +3,13 @@
 }
 
 #introduction {
-    padding-top: 5.3rem;     
+    padding-top: 5.3rem;
 }
 
 .socials {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);    
+    transform: translateX(-50%) translateY(-50%);
     width: 53%;
     height: 7rem;
     background-color: var(--mid-gray);
@@ -21,25 +21,25 @@
     margin: 1.7rem 2.2rem;
     cursor: pointer;
     background-color: #383546;
-    width: 14.7rem;  
+    width: 14.7rem;
     height: 3.7rem;
 }
 
 .logo {
-    margin-right: .5rem;
+    margin-right: 0.5rem;
     width: 1.5rem;
     size: 1rem;
-    margin-top: .85rem;
+    margin-top: 0.85rem;
 }
 
 .linkedin-logo {
-    margin-left: .2rem;
+    margin-left: 0.2rem;
     width: 1.5rem;
     size: 1rem;
-    margin-top: .85rem;
+    margin-top: 0.85rem;
 }
 
-#projects{ 
+#projects {
     background-color: var(--dark-gray);
     padding-top: 6rem;
 }
@@ -54,19 +54,18 @@
 
 #contact {
     background-color: var(--darkest-gray);
-    height: 20rem;  
+    height: 20rem;
     display: flex;
     width: 100%;
     position: relative;
 }
 
-.contact-content{
+.contact-content {
     display: flex;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
 }
-
 
 .contact-row {
     margin-top: 2rem;
@@ -74,12 +73,12 @@
     width: 19rem;
     font-size: 0.95rem;
     padding-top: 1.8rem;
-    position: relative;   
+    position: relative;
 }
 
 .info {
-    position: relative;   
-    
+    position: relative;
+
     padding: 0.6rem;
 }
 
@@ -88,13 +87,11 @@
 }
 
 #phone-number {
-
 }
 
 #email {
-
 }
 
-.send-email{ 
+.send-email {
     background-color: var(--dark-gray);
 }

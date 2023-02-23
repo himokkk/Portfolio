@@ -1,10 +1,10 @@
 :root {
     --light-gray: #363543;
-    --mid-gray: #3F3E4E;
+    --mid-gray: #3f3e4e;
     --dark-gray: #282834;
-    --darkest-gray: #1D1D26;
-    --white: #FFFDFA;
-    --orange: #F6B525;
+    --darkest-gray: #1d1d26;
+    --white: #fffdfa;
+    --orange: #f6b525;
     --pink: #ff00ff;
     --hover-orange: #f8a01e;
 }
@@ -50,7 +50,7 @@ a:active {
     color: var(--white);
 }
 
-.invisible { 
+.invisible {
     display: none;
 }
 

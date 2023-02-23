@@ -12,8 +12,8 @@ h1 {
 .intruduction-content {
     position: relative;
     left: 50%;
-    transform: translateX(-50%);    
-    margin-top: 1rem;     
+    transform: translateX(-50%);
+    margin-top: 1rem;
 }
 
 .greeting {
@@ -25,7 +25,7 @@ h1 {
     line-height: 1.5rem;
 }
 
-.circle {    
+.circle {
     border-radius: 50%;
     background-color: var(--dark-gray);
     position: relative;
@@ -41,8 +41,8 @@ h1 {
     width: 23rem;
     margin-left: -11rem;
     margin-top: -3rem;
+    filter: drop-shadow(0 0 7px var(--orange));
 }
-
 
 .description1 {
     position: relative;
@@ -68,4 +68,26 @@ h1 {
     width: 70%;
     margin-bottom: 1rem;
     border: 1px solid var(--orange);
+    box-shadow: 0 0 10px var(--orange), 0 0 20px var(--orange), 0 0 40px var(--orange), 0 0 80px var(--orange);
+}
+
+.show-more {
+    position: relative;
+    margin-top: 0.5rem;
+    width: 8rem;
+    cursor: pointer;
+    color: var(--orange);
+    text-shadow: 0 0 10px var(--orange), 0 0 20px var(--orange), 0 0 40px var(--orange), 0 0 80px var(--orange);
+}
+
+.show-more::before {
+    content: "";
+    position: absolute;
+    background-color: var(--orange);
+    width: 100%;
+    top: 100%;
+    filter: blur(2em);
+    height: 100%;
+    transform: perspective(1rem) rotateX(40deg) scale(1, 0.3) translateZ(-0.2em);
+    text-shadow: 0 0 10px var(--orange), 0 0 20px var(--orange), 0 0 40px var(--orange), 0 0 80px var(--orange);
 }
