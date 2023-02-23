@@ -1,10 +1,12 @@
 h1 {
     font-size: 2.5rem;
+    color: var(--react-blue);
+    margin-left: 0.3rem;
 }
 
 .introduction-main {
-    background-color: var(--light-gray);
-    height: 32rem;
+    background-color: var(--darkest-gray);
+    height: 45rem;
     width: 100%;
     display: flex;
 }
@@ -13,16 +15,31 @@ h1 {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 1rem;
+    padding-top: 15rem;
+}
+
+.intruduction-content::before {
+    content: "Introduction";
+    position: absolute;
+    z-index: 10;
+    left: 19rem;
+    top: 7rem;
+    font-size: 4rem;
+    color: var(--react-blue);
 }
 
 .greeting {
     z-index: 2;
     position: relative;
-    margin-top: 6rem;
+    margin-top: 7rem;
     text-align: left;
     letter-spacing: 2px;
     line-height: 1.5rem;
+    color: var(--react-blue);
+}
+
+h3 {
+    color: var(--pink);
 }
 
 .circle {
@@ -33,42 +50,60 @@ h1 {
     height: 27rem;
     width: 27rem;
     margin-left: -6rem;
+    filter: blur(1px);
+    box-shadow: 0 0 20px var(--pink);
 }
 
 .photo {
     position: absolute;
     z-index: 3;
     width: 23rem;
-    margin-left: -11rem;
+    margin-left: -31rem;
     margin-top: -3rem;
-    filter: drop-shadow(0 0 7px var(--orange));
+    filter: blur(0px);
+    filter: drop-shadow(0 0 9px var(--pink));
 }
 
 .description1 {
     position: relative;
     width: 15rem;
+    margin-bottom: 0.3rem;
+    margin-left: 0.3rem;
+}
+
+h2 {
+    margin-left: 0.3rem;
 }
 
 .description2 {
     position: relative;
     width: 15rem;
+    margin-bottom: 0.3rem;
+    margin-left: 0.3rem;
 }
 
 .introduction-right {
-    margin-left: -2rem;
+    margin-left: -3.5rem;
     z-index: 2;
     position: relative;
     margin-top: 3rem;
     text-align: left;
     letter-spacing: 2px;
     line-height: 1.5rem;
+    color: var(--react-blue);
 }
 
 .introduction-line {
-    width: 70%;
+    width: 50%;
     margin-bottom: 1rem;
-    border: 1px solid var(--orange);
-    box-shadow: 0 0 10px var(--orange), 0 0 20px var(--orange), 0 0 40px var(--orange), 0 0 80px var(--orange);
+    border: 2px solid var(--pink);
+    filter: blur(2px);
+    box-shadow: 0 0 10px var(--pink), 0 0 20px var(--pink), 0 0 40px var(--pink), 0 0 80px var(--pink),
+        0 0 120px var(--pink), 0 0 200px var(--pink), 0 0 300px var(--pink);
+}
+
+.introduction-right .introduction-line {
+    width: 60%;
 }
 
 .show-more {
@@ -76,18 +111,5 @@ h1 {
     margin-top: 0.5rem;
     width: 8rem;
     cursor: pointer;
-    color: var(--orange);
-    text-shadow: 0 0 10px var(--orange), 0 0 20px var(--orange), 0 0 40px var(--orange), 0 0 80px var(--orange);
-}
-
-.show-more::before {
-    content: "";
-    position: absolute;
-    background-color: var(--orange);
-    width: 100%;
-    top: 100%;
-    filter: blur(2em);
-    height: 100%;
-    transform: perspective(1rem) rotateX(40deg) scale(1, 0.3) translateZ(-0.2em);
-    text-shadow: 0 0 10px var(--orange), 0 0 20px var(--orange), 0 0 40px var(--orange), 0 0 80px var(--orange);
+    color: var(--pink);
 }

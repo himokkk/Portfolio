@@ -2,10 +2,6 @@
     color: var(--white);
 }
 
-#introduction {
-    padding-top: 5.3rem;
-}
-
 .socials {
     position: absolute;
     left: 50%;
@@ -35,7 +31,6 @@
 .linkedin-logo {
     margin-left: 0.2rem;
     width: 1.5rem;
-    size: 1rem;
     margin-top: 0.85rem;
 }
 

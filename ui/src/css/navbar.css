@@ -2,7 +2,7 @@
     position: fixed;
     width: 100%;
     z-index: 10;
-    background-color: var(--light-gray);
+    background-color: var(--darkest-gray);
     color: var(--white);
     height: 5.3rem;
 }
@@ -15,14 +15,26 @@
 }
 
 #nameButton {
-    margin-left: 25.5rem;
+    margin-left: 27rem;
 }
 
-#homeButton {
+#home-icon {
+    fill: var(--react-blue);
+    width: 1.5rem;
+    float: left;
+    margin-right: 0.4rem;
+}
+
+#nameButtom div {
+    width: 1rem;
+    height: 1rem;
+}
+
+#aboutButton {
     margin-left: 28rem;
 }
 
-.color-orange {
+.highlight-color {
     color: var(--pink);
-    text-shadow: 0 0 10px var(--pink), 0 0 20px var(--pink), 0 0 40px var(--pink), 0 0 80px var(--pink);
+    text-shadow: 0 0 10px var(--pink), 0 0 20px var(--pink);
 }
