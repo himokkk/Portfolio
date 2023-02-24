@@ -15,7 +15,7 @@ const IntroductionComponent = (props: Props) => {
         <div className="introduction-main">
             <div className="intruduction-content">
                 <div className="greeting float-left">
-                    <h1>Paweł Kwieciński</h1>
+                    <h1 className="prevent-select">Paweł Kwieciński</h1>
                     <hr className="introduction-line float-left" />
                     <div className="clear-both"></div>
                     <div className="description1">
@@ -26,9 +26,9 @@ const IntroductionComponent = (props: Props) => {
                     <div className="clear-both"></div>
                 </div>
                 <div className="circle prevent-select float-left"></div>
-                <img src={photo} className="photo float-left" alt="me" />
+                <img src={photo} className="photo float-left prevent-select" alt="me" />
                 <div className="introduction-right float-left">
-                    <h2>Software delevoper</h2>
+                    <h2 className="prevent-select">Software delevoper</h2>
                     <hr className="introduction-line float-left" />
                     <div className="clear-both"></div>
                     <div className="description2">Mostly interesed in Python, C++, JavaScript/TypeScript</div>

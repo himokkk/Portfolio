@@ -18,9 +18,9 @@
 }
 
 .stack-content h1 {
+    font-size: 2.5rem;
     margin-bottom: 10rem;
     color: var(--react-blue);
-    text-shadow: 0 0 5px var(--react-blue), 0 0 20px black;
 }
 
 .stacks {

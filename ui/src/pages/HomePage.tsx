@@ -34,7 +34,7 @@ const HomePage: React.FC = () => {
                 <IntroductionComponent skillsRef={skillsRef} />
             </div>
 
-            <div className="socials prevent-select" id="socials">
+            {/* <div className="socials prevent-select" id="socials">
                 <a className="color-white" href={github_url} rel="noreferrer" target="_blank">
                     <div className="social float-left">
                         <img src={github} className="logo" alt="Github logo" />
@@ -53,7 +53,7 @@ const HomePage: React.FC = () => {
                         slack
                     </div>
                 </a>
-            </div>
+            </div> */}
 
             <div id="projects">
                 <ProjectsComponent />

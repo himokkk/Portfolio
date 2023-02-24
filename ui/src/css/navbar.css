@@ -1,37 +1,31 @@
 .navbar {
     position: fixed;
-    width: 100%;
-    z-index: 10;
-    background-color: var(--darkest-gray);
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1rem;
+    width: 23rem;
+    height: 4.5rem;
+    display: flex;
+    padding: 0 5px;
+    font-size: 1.3rem;
+    background-color: var(--light-gray);
+    border-radius: 9999px;
     color: var(--white);
-    height: 5.3rem;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.5);
 }
 
-.navbar-button {
-    margin: 1.5rem;
-    padding: 0.5rem;
-    margin-left: 1rem;
+.nav-button {
     cursor: pointer;
 }
 
-#nameButton {
-    margin-left: 27rem;
-}
-
-#home-icon {
-    fill: var(--react-blue);
-    width: 1.5rem;
-    float: left;
-    margin-right: 0.4rem;
-}
-
-#nameButtom div {
-    width: 1rem;
-    height: 1rem;
-}
-
-#aboutButton {
-    margin-left: 28rem;
+.active {
+    color: white;
+    padding: 0.5rem;
+    border-radius: 100%;
+    background: linear-gradient(92.23deg, #406aff 21.43%, #3bace2 50.53%, #b936ee 100%, #ff56f6 117.04%);
 }
 
 .highlight-color {
