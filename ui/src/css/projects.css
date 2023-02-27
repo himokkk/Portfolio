@@ -2,8 +2,8 @@
     background-color: var(--dark-gray);
     height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .show-div {
@@ -17,25 +17,92 @@
     transform: translateY(0);
 }
 
-.switch {
+#projects-main {
     display: flex;
+    align-items: stretch;
+    justify-content: center;
 }
 
-.project-content {
-    width: 30rem;
-    height: 30rem;
+#projects-header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+#projects-logo {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 2rem;
+}
+
+.project-content {
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    color: var(--mid-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4rem;
+    font-size: 15px;
+}
+
+.annotation-link {
+    background-color: var(--react-blue);
+    border-radius: 50%;
+}
+
+.project-description-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.project-description {
+    max-width: 35rem;
+    margin-top: 1rem;
+    text-align: left;
+    word-spacing: 0.1rem;
+    padding-right: 1rem;
+}
+
+.learn-more {
+    font-size: 1rem;
+    position: relative;
+    bottom: 0;
+    white-space: nowrap;
+    color: var(--react-blue);
+}
+
+.project-title {
+    color: var(--react-blue);
+}
+
+.horizontal-line {
+    margin-top: 1rem;
+    width: 98%;
+    height: 1px;
+    border: 0;
+    background-color: var(--pink);
+}
+
 .vertical-line {
-    margin-left: 49.9%;
     width: 0.5px;
     background-color: var(--pink);
     box-shadow: 0 0 12px var(--pink), 0 0 20px var(--pink);
-
-    height: 80%;
+    margin: 0 2rem;
+    height: auto;
 }
 
 .play-button {
