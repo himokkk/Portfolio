@@ -7,28 +7,30 @@
     width: 23rem;
     height: 4.5rem;
     display: flex;
-    padding: 0 5px;
+    padding: 0 1.25rem;
     font-size: 1.3rem;
     background-color: var(--light-gray);
     border-radius: 9999px;
     color: var(--white);
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: space-between;
     color: rgba(255, 255, 255, 0.5);
 }
 
 .nav-button {
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.8rem;
+    height: 1.8rem;
+    padding: 0.5rem;
 }
 
 .active {
     color: white;
-    padding: 0.5rem;
     border-radius: 100%;
     background: linear-gradient(92.23deg, #406aff 21.43%, #3bace2 50.53%, #b936ee 100%, #ff56f6 117.04%);
-}
-
-.highlight-color {
-    color: var(--pink);
-    text-shadow: 0 0 10px var(--pink), 0 0 20px var(--pink);
 }

@@ -15,10 +15,11 @@ const ProjectsComponent: React.FC = () => {
 
     const handleScroll = () => {
         const scrollPosition = window.scrollY;
-        const targetDiv = document.getElementById("socials") as HTMLDivElement;
+        const targetDiv = document.getElementById("projects") as HTMLDivElement;
         const targetPosition = targetDiv.offsetTop;
 
-        if (scrollPosition > targetPosition - 300) {
+        if (scrollPosition > targetPosition - 500) {
+            console.log("x");
             setShowDiv(true);
         } else {
             setShowDiv(false);
