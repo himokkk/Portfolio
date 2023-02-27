@@ -8,24 +8,47 @@ h1 {
     background-color: var(--darkest-gray);
     height: 100vh;
     width: 100%;
+    justify-content: center;
     display: flex;
+    position: relative;
+}
+
+#introduction-nav {
+    display: flex;
+    width: 100%;
+    padding-top: 1rem;
+    text-align: left;
+}
+
+#small-logo div:nth-child(1),
+#small-logo div:nth-child(2) {
+    text-align: left;
+    font-size: 2rem;
+}
+
+#introduction-nav div:nth-child(1) {
+    color: var(--react-blue);
+}
+
+#introduction-nav div:nth-child(2) {
+    color: white;
+}
+
+.hire-me-button {
+    position: absolute;
+    right: 0;
+    width: 6rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9999px;
+    background-color: red;
+    border: 1px solid red;
 }
 
 .intruduction-content {
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-top: 15rem;
-}
-
-.intruduction-content::before {
-    content: "Introduction";
-    position: absolute;
-    z-index: 10;
-    left: 19rem;
-    top: 7rem;
-    font-size: 4rem;
-    color: var(--react-blue);
 }
 
 .greeting {
@@ -44,12 +67,15 @@ h3 {
 .circle {
     border-radius: 50%;
     background-color: var(--dark-gray);
+    background-image: url(../assets/photo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     z-index: 1;
     height: 27rem;
     width: 27rem;
     margin-left: -9rem;
-    filter: blur(1px);
     box-shadow: 0 0 20px var(--pink);
 }
 
@@ -57,7 +83,7 @@ h3 {
     position: absolute;
     z-index: 3;
     width: 23rem;
-    margin-left: -31rem;
+    margin-left: 1.6rem;
     margin-top: -3rem;
     filter: blur(0px);
     filter: drop-shadow(0 0 9px var(--pink));

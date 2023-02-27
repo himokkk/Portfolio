@@ -14,6 +14,13 @@ const IntroductionComponent = (props: Props) => {
     return (
         <div className="introduction-main">
             <div className="intruduction-content">
+                <div id="introduction-nav">
+                    <div id="small-logo">
+                        <div>Paweł</div> <div>Kwieciński</div>
+                    </div>
+                    <div className="hire-me-button">Hire Me!</div>
+                </div>
+
                 <div className="greeting float-left">
                     <h1 className="prevent-select">Paweł Kwieciński</h1>
                     <hr className="introduction-line float-left" />
@@ -26,7 +33,6 @@ const IntroductionComponent = (props: Props) => {
                     <div className="clear-both"></div>
                 </div>
                 <div className="circle prevent-select float-left"></div>
-                <img src={photo} className="photo float-left prevent-select" alt="me" />
                 <div className="introduction-right float-left">
                     <h2 className="prevent-select">Software delevoper</h2>
                     <hr className="introduction-line float-left" />
