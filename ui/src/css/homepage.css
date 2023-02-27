@@ -50,15 +50,14 @@
     background-color: var(--darkest-gray);
     height: 100vh;
     display: flex;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
     position: relative;
 }
 
 .contact-content {
     display: flex;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .contact-row {

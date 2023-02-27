@@ -43,7 +43,7 @@
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
-    background-color: var(--orange);
+    background-color: var(--react-blue);
     color: var(--mid-gray);
     font-size: 16px;
     cursor: pointer;

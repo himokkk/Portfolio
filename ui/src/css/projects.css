@@ -1,7 +1,9 @@
 .projects {
     background-color: var(--dark-gray);
     height: 100vh;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .show-div {
@@ -16,60 +18,41 @@
 }
 
 .switch {
-    margin-left: 25.5rem;
     display: flex;
 }
 
-.switch-button {
-    width: 5rem;
-    height: 1.5rem;
-    padding: 1rem 2.5rem;
-    margin: 2rem;
-    background-color: var(--mid-gray);
-    border: 1px solid var(--orange);
-    border-radius: 1.5rem;
-    cursor: pointer;
-}
-
-.projects-content {
-    margin-top: 0.3rem;
-    margin-left: 25.5rem;
-    border: 1px solid var(--orange);
-    border-radius: 1.5rem;
-    width: 57rem;
+.project-content {
+    width: 30rem;
     height: 30rem;
-}
-
-#chess-content {
-    width: 100%;
-    height: 100%;
     display: flex;
-}
-
-#left-chess-content {
-    height: 100%;
-    width: 49.9%;
-}
-
-#right-chess-content {
-    height: 100%;
-    width: 49.9%;
+    justify-content: center;
+    align-items: center;
 }
 
 .vertical-line {
+    margin-left: 49.9%;
     width: 0.5px;
-    background-color: var(--orange);
-    margin-top: 5%;
+    background-color: var(--pink);
+    box-shadow: 0 0 12px var(--pink), 0 0 20px var(--pink);
+
     height: 80%;
 }
 
 .play-button {
-    border-radius: 1rem;
-    background-color: #7fa650;
+    font-size: 1.5rem;
+    border: 0.125rem solid var(--pink);
+    color: var(--pink);
     width: 8rem;
-    height: 1.5rem;
+    height: 2rem;
     padding: 1rem;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.25rem;
+    text-shadow: 0 0 0.1rem hsl(0 0% 100% / 0.5), 0 0 0.45rem var(--pink);
+    box-shadow: 0 0 0.5rem 0 var(--pink);
+}
+
+.play-button:hover {
 }
 
 #chess-play-button {
@@ -85,27 +68,4 @@
 .game-text {
     width: 75%;
     margin-left: 12.5%;
-}
-
-#chess-text1 {
-    margin-top: 1rem;
-}
-
-#chess-text2 {
-    margin-top: 7rem;
-}
-
-#game1-content {
-    padding-left: 10rem;
-    padding-top: 10rem;
-}
-
-#game2-content {
-    padding-left: 10rem;
-    padding-top: 10rem;
-}
-
-#game3-content {
-    padding-left: 10rem;
-    padding-top: 10rem;
 }

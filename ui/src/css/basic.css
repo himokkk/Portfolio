@@ -69,3 +69,7 @@ a:active {
 .absolute {
     position: absolute;
 }
+
+.relative {
+    position: relative;
+}

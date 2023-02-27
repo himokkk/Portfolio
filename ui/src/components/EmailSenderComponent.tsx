@@ -11,7 +11,7 @@ const EmailSender: React.FC = () => {
                     <input type="email" id="email" name="email" placeholder="Enter your email" required />
                     <button type="submit">Send</button>
                 </div>
-                <textarea id="message" name="message" rows={7} placeholder="Enter your message"></textarea>
+                <textarea id="message" name="message" rows={12} placeholder="Enter your message"></textarea>
             </form>
         </div>
     );
