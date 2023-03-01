@@ -5,8 +5,13 @@
     --darkest-gray: #1d1d26;
     --white: #fffdfa;
     --orange: #ffa500;
+    --react-blue: #00d8ff;
     --pink: #ff00ff;
     --hover-orange: #f8a01e;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 a:link {
@@ -72,4 +77,8 @@ a:active {
 
 .relative {
     position: relative;
+}
+
+.text-left {
+    text-align: left;
 }

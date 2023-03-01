@@ -1,5 +1,6 @@
-.navbar {
+#navbar {
     position: fixed;
+    -webkit-backface-visibility: hidden;
     z-index: 50;
     left: 50%;
     transform: translateX(-50%);
@@ -13,8 +14,6 @@
     border-radius: 9999px;
     color: var(--white);
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
     justify-content: space-between;
     color: rgba(255, 255, 255, 0.5);
 }
@@ -33,4 +32,22 @@
     color: white;
     border-radius: 100%;
     background: linear-gradient(92.23deg, #406aff 21.43%, #3bace2 50.53%, #b936ee 100%, #ff56f6 117.04%);
+}
+
+@media only screen and (max-width: 768px) {
+    #navbar {
+        bottom: 0.5rem;
+        width: 15rem;
+        height: 4rem;
+    }
+
+    .nav-button {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1.5rem;
+        height: 1.5rem;
+        padding: 0.5rem;
+    }
 }

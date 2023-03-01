@@ -2,11 +2,8 @@ import React, { useState, useEffect } from "react";
 
 import "../css/projects.css";
 
-import { BsArrowUpRight, BsBoxArrowUpRight } from "react-icons/bs";
+import { BsArrowUpRight } from "react-icons/bs";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
-import { ImArrowUpRight } from "react-icons/im";
-
-import chess from "../assets/chess.png";
 
 const ProjectsComponent: React.FC = () => {
     const [showDiv, setShowDiv] = useState(false);
@@ -23,7 +20,6 @@ const ProjectsComponent: React.FC = () => {
         const targetPosition = targetDiv.offsetTop;
 
         if (scrollPosition > targetPosition - 500) {
-            console.log("x");
             setShowDiv(true);
         } else {
             setShowDiv(false);
@@ -43,7 +39,7 @@ const ProjectsComponent: React.FC = () => {
     };
 
     return (
-        <div className="projects prevent-select">
+        <div className="projects prevent-select" id="projects">
             <div className={showDiv ? "show-div show" : "show-div"} id="projects-main">
                 <div id="projects-header">
                     <h1>Projects</h1>
@@ -56,7 +52,7 @@ const ProjectsComponent: React.FC = () => {
                         <div className="project-header">
                             <div className="project-title"> Chess</div>
                             <div className="annotation-link">
-                                <ImArrowUpRight className="arrow" />
+                                <BsArrowUpRight className="arrow" />
                             </div>
                         </div>
                         <div className="project-description-container">
@@ -74,7 +70,7 @@ const ProjectsComponent: React.FC = () => {
                         <div className="project-header">
                             <div className="project-title"> Chess</div>
                             <div className="annotation-link">
-                                <ImArrowUpRight className="arrow" />
+                                <BsArrowUpRight className="arrow" />
                             </div>
                         </div>
                         <div className="project-description-container">
@@ -90,9 +86,9 @@ const ProjectsComponent: React.FC = () => {
 
                     <div className="project-content">
                         <div className="project-header">
-                            <div className="project-title"> Chess</div>
+                            <div className="project-title">Chess</div>
                             <div className="annotation-link">
-                                <ImArrowUpRight className="arrow" />
+                                <BsArrowUpRight className="arrow" />
                             </div>
                         </div>
                         <div className="project-description-container">

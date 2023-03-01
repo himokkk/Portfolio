@@ -1,29 +1,37 @@
-h1 {
-    font-size: 2.5rem;
-    color: var(--react-blue);
-    margin-left: 0.3rem;
-}
-
-.introduction-main {
+#introduction {
     background-color: var(--darkest-gray);
-    height: 100vh;
-    width: 100%;
-    justify-content: center;
-    display: flex;
     position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
 }
 
 #introduction-nav {
+    position: absolute;
     display: flex;
     align-items: center;
-    width: 100%;
+    justify-content: space-between;
     padding-top: 1rem;
-    text-align: left;
 }
 
-#small-logo div:nth-child(1),
-#small-logo div:nth-child(2) {
-    text-align: left;
+#software-developer,
+#my-name {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#software-developer {
+    font-size: 2rem;
+}
+
+#my-name {
+    font-size: 2.5rem;
+}
+
+#small-logo div {
     font-size: 2rem;
 }
 
@@ -36,11 +44,10 @@ h1 {
 }
 
 .hire-me-button {
-    position: absolute;
-    right: 10%;
     width: 6rem;
     height: 3.5rem;
     display: flex;
+    margin-left: 40rem;
     justify-content: center;
     align-items: center;
     border-radius: 9999px;
@@ -48,20 +55,35 @@ h1 {
 }
 
 .introduction-content {
-    margin-top: 9rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
-.greeting {
+.introduction-left,
+.introduction-right {
+    position: absolute;
     z-index: 2;
-    position: relative;
-    margin-top: 7rem;
-    text-align: left;
     letter-spacing: 2px;
     line-height: 1.5rem;
 }
 
-h3 {
-    color: var(--pink);
+.introduction-left {
+    margin-top: 4rem;
+}
+
+.introduction-right {
+    margin-left: 23rem;
+    margin-top: -2rem;
+}
+
+#small-logo,
+.introduction-left {
+    margin-left: -14rem;
+}
+
+#my-name {
+    color: var(--react-blue);
 }
 
 .circle {
@@ -75,46 +97,25 @@ h3 {
     z-index: 1;
     height: 27rem;
     width: 27rem;
-    margin-left: -8rem;
     box-shadow: 0 0 20px var(--pink);
 }
 
-.photo {
-    position: absolute;
-    z-index: 3;
-    width: 23rem;
-    margin-left: 1.6rem;
-    margin-top: -3rem;
-    filter: blur(0px);
-    filter: drop-shadow(0 0 9px var(--pink));
-}
-
-.description1 {
+.description {
     position: relative;
     width: 15rem;
     margin-bottom: 0.3rem;
+    font-size: 1rem;
+}
+
+h1,
+h2,
+.description {
     margin-left: 0.3rem;
 }
 
-h2 {
-    margin-left: 0.3rem;
-}
-
-.description2 {
-    position: relative;
-    width: 15rem;
-    margin-bottom: 0.3rem;
-    margin-left: 0.3rem;
-}
-
-.introduction-right {
-    margin-left: -3.5rem;
-    z-index: 2;
-    position: relative;
-    margin-top: 3rem;
-    text-align: left;
-    letter-spacing: 2px;
-    line-height: 1.5rem;
+#software-developer {
+    display: flex;
+    gap: 0.5rem;
 }
 
 .introduction-right h2 {
@@ -122,22 +123,143 @@ h2 {
 }
 
 .introduction-line {
-    width: 50%;
-    margin-bottom: 1rem;
+    width: 65%;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
     border: 2px solid var(--pink);
     filter: blur(2px);
     box-shadow: 0 0 10px var(--pink), 0 0 20px var(--pink), 0 0 40px var(--pink), 0 0 80px var(--pink),
         0 0 120px var(--pink), 0 0 200px var(--pink), 0 0 300px var(--pink);
 }
 
-.introduction-right .introduction-line {
-    width: 60%;
+@media only screen and (max-width: 600px) {
+    #introduction-nav {
+        display: none;
+    }
+
+    .introduction-main {
+        flex-direction: row;
+    }
+
+    .introduction-content {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .introduction-line {
+        width: 60%;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .circle {
+        display: flex;
+        margin-top: 4vw;
+        align-self: center;
+        width: 17rem;
+        height: 17rem;
+    }
+
+    .description {
+        width: 15rem;
+        letter-spacing: 0px;
+        font-size: 0.8rem;
+    }
+
+    .introduction-left,
+    .introduction-right {
+        position: relative;
+        margin: 0;
+        margin-left: 1rem;
+    }
+
+    #small-logo {
+        margin-left: 1rem;
+    }
+
+    #my-name {
+        font-size: 1.7rem;
+    }
+
+    #software-developer {
+        font-size: 1.4rem;
+    }
 }
 
-.show-more {
-    position: relative;
-    margin-top: 0.5rem;
-    width: 8rem;
-    cursor: pointer;
-    color: var(--pink);
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+    #introduction-nav {
+        padding-top: 0rem;
+    }
+
+    .circle {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .description {
+        width: 10rem;
+        letter-spacing: 0px;
+        font-size: 0.8rem;
+    }
+
+    #my-name {
+        font-size: 1.9rem;
+        flex-direction: column;
+    }
+
+    #small-logo,
+    .introduction-left {
+        margin-left: -8.3rem;
+    }
+
+    .introduction-right {
+        margin-left: 16rem;
+    }
+
+    .hire-me-button {
+        margin-left: 18rem;
+    }
+
+    #software-developer {
+        flex-direction: column;
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .circle {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    .description {
+        width: 13rem;
+        letter-spacing: 1px;
+        font-size: 0.9rem;
+    }
+
+    #my-name {
+        font-size: 2.2rem;
+    }
+
+    .hire-me-button {
+        margin-left: 35rem;
+    }
+
+    #small-logo,
+    .introduction-left {
+        margin-left: -12rem;
+    }
+
+    .introduction-right {
+        margin-left: 21.5rem;
+    }
+
+    #software-developer {
+        font-size: 1.7rem;
+    }
 }

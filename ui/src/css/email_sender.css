@@ -18,12 +18,25 @@
     display: flex;
 }
 
+.title-input-text {
+    position: absolute;
+    top: -0.75rem;
+    left: 1.25rem;
+    z-index: 20;
+    background-color: var(--darkest-gray);
+    padding: 0.2rem;
+}
+
+#message-title {
+    top: 0.2rem;
+}
+
 .send-email-footer input,
 .send-email-footer textarea {
-    background-color: var(--light-gray);
+    background-color: var(--darkest-gray);
     padding: 10px;
     border-radius: 5px;
-    border: none;
+    border: 1px solid var(--react-blue);
     margin-right: 10px;
     font-size: 16px;
 }
@@ -49,11 +62,107 @@
     cursor: pointer;
 }
 
-.send-email-footer button:hover {
-    background-color: var(--hover-orange);
+.send-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--react-blue);
+    width: 5rem;
+    height: 3.4rem;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.send-icon {
+    position: relative;
+    top: 0.1rem;
+    margin-left: 0.3rem;
+    font-size: 1rem;
 }
 
 .send-email-footer .disclaimer {
     font-size: 14px;
     margin-top: 10px;
+}
+
+@media only screen and (max-width: 550px) {
+    .timeline-main h1 {
+        font-size: 1.8rem;
+    }
+
+    .techstack-header {
+        gap: 3.5rem;
+    }
+
+    .timestamp-date {
+        font-size: 1.3rem;
+    }
+
+    .timestamp-title {
+        font-size: 1rem;
+    }
+
+    .timestamp-description {
+        font-size: 0.8rem;
+    }
+
+    .timestamp-hr {
+        width: 1rem;
+    }
+
+    .timestamp-content * {
+        width: 8rem;
+    }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 650px) {
+    .timeline-main h1 {
+        font-size: 2rem;
+    }
+
+    .techstack-header {
+        gap: 9rem;
+    }
+
+    .timestamp-date {
+        font-size: 1.5rem;
+    }
+
+    .timestamp-hr {
+        width: 4rem;
+    }
+
+    .timestamp-content * {
+        width: 11rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .send-email-footer textarea {
+        height: 6rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .send-email-footer input {
+        width: 11rem;
+        height: 2rem;
+    }
+
+    .send-email-footer textarea {
+        width: 16.5rem;
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .send-email-footer input {
+        width: 15rem;
+        height: 2rem;
+    }
+
+    .send-email-footer textarea {
+        width: 20.5rem;
+        margin-top: 1rem;
+    }
 }

@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .show-div {
@@ -67,6 +68,7 @@
 .project-description-container {
     display: flex;
     align-items: flex-end;
+    margin-bottom: 0.5rem;
 }
 
 .project-description {
@@ -86,11 +88,11 @@
 }
 
 .project-title {
+    font-size: 1.8rem;
     color: var(--react-blue);
 }
 
 .horizontal-line {
-    margin-top: 1rem;
     width: 98%;
     height: 1px;
     border: 0;
@@ -119,9 +121,6 @@
     box-shadow: 0 0 0.5rem 0 var(--pink);
 }
 
-.play-button:hover {
-}
-
 #chess-play-button {
     margin-top: 3.5rem;
     cursor: pointer;
@@ -135,4 +134,138 @@
 .game-text {
     width: 75%;
     margin-left: 12.5%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .project-content {
+        max-width: 15rem;
+        padding-bottom: 1rem;
+    }
+
+    .learn-more {
+        font-size: 0.7rem;
+    }
+
+    .arrow {
+        font-size: 13px;
+    }
+
+    .project-title {
+        font-size: 1.4rem;
+    }
+
+    .vertical-line {
+        margin: 0 0.7rem;
+    }
+
+    #projects-header {
+        max-width: 5.5rem;
+    }
+    #projects-header h1 {
+        font-size: 1.3rem;
+    }
+
+    #projects-logo {
+        width: 3rem;
+        height: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .projects-description {
+        font-size: 0.8rem;
+    }
+
+    .project-description {
+        max-width: 18rem;
+        font-size: 0.6rem;
+        margin-top: 0.4rem;
+        word-spacing: 0rem;
+        padding-right: 0.1rem;
+    }
+
+    .project-description-container {
+        margin-bottom: 0.4rem;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .project-content {
+        background-color: red !important;
+    }
+
+    .project-content {
+        max-width: 25rem;
+        padding-bottom: 1rem;
+    }
+
+    .learn-more {
+        font-size: 0.8rem;
+    }
+
+    .arrow {
+        font-size: 13px;
+    }
+
+    .project-title {
+        font-size: 1.6rem;
+    }
+
+    .vertical-line {
+        margin: 0 1rem;
+    }
+
+    #projects-header {
+        max-width: 5.5rem;
+    }
+    #projects-header h1 {
+        font-size: 1.3rem;
+    }
+
+    #projects-logo {
+        width: 3rem;
+        height: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .projects-description {
+        font-size: 0.8rem;
+    }
+
+    .project-description {
+        max-width: 18rem;
+        font-size: 0.8rem;
+        margin-top: 0.4rem;
+        word-spacing: 0rem;
+        padding-right: 0.1rem;
+    }
+
+    .project-description-container {
+        margin-bottom: 0.4rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .project-content {
+        max-width: 35rem;
+    }
+    .project-description {
+        max-width: 25rem;
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        word-spacing: 0.01rem;
+        padding-right: 0.1rem;
+    }
+
+    .project-description-container {
+        margin-bottom: 0.4rem;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .project-content {
+        max-width: 40rem;
+    }
+    .project-description {
+        max-width: 28rem;
+    }
 }
