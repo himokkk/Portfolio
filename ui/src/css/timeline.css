@@ -1,0 +1,154 @@
+.timeline-main {
+    background-color: var(--light-gray);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeline-main h1 {
+    font-size: 2.5rem;
+    color: var(--react-blue);
+}
+
+.techstack-header {
+    display: flex;
+    gap: 10rem;
+}
+
+.timeline-content {
+    display: flex;
+}
+
+#timeline-hr {
+    height: 30rem;
+    width: 2px;
+    background-color: var(--react-blue);
+    border: 0;
+}
+
+#timeline-hr::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    margin-left: -0.5rem;
+    margin-top: -0.5rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--react-blue);
+}
+
+#timeline-hr::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    margin-left: -0.5rem;
+    margin-top: 29.5rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--react-blue);
+}
+
+.right-container {
+    text-align: left;
+}
+
+.left-container {
+    text-align: right;
+}
+
+.timestamp {
+    display: flex;
+    align-items: center;
+}
+
+.timestamp-hr {
+    height: 1px;
+    width: 4.5rem;
+    background-color: var(--react-blue);
+    border: 0;
+}
+
+.timestamp-content * {
+    width: 15rem;
+    margin: 0 1rem;
+}
+
+.timestamp-date {
+    font-size: 1.6rem;
+    color: var(--pink);
+}
+
+.timestamp-title {
+    color: var(--react-blue);
+}
+
+.timestamp-description {
+    margin-top: 0.2rem;
+    font-size: 0.85rem;
+}
+
+#high-school-timestamp {
+    margin-top: 2rem;
+}
+
+#studies-timestamp {
+    margin-top: 9rem;
+}
+
+#comp-timestamp {
+    margin-top: 8rem;
+}
+
+@media only screen and (max-width: 550px) {
+    .timeline-main h1 {
+        font-size: 1.8rem;
+    }
+
+    .techstack-header {
+        gap: 3.5rem;
+    }
+
+    .timestamp-date {
+        font-size: 1.3rem;
+    }
+
+    .timestamp-title {
+        font-size: 1rem;
+    }
+
+    .timestamp-description {
+        font-size: 0.8rem;
+    }
+
+    .timestamp-hr {
+        width: 1rem;
+    }
+
+    .timestamp-content * {
+        width: 8rem;
+    }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 650px) {
+    .timeline-main h1 {
+        font-size: 2rem;
+    }
+
+    .techstack-header {
+        gap: 9rem;
+    }
+
+    .timestamp-date {
+        font-size: 1.5rem;
+    }
+
+    .timestamp-hr {
+        width: 4rem;
+    }
+
+    .timestamp-content * {
+        width: 11rem;
+    }
+}
