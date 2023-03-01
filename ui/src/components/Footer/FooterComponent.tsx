@@ -3,9 +3,9 @@ import { CiMail } from "react-icons/ci";
 import { FaCity } from "react-icons/fa";
 import { IoIosPhonePortrait } from "react-icons/io";
 
-import EmailSender from "./EmailSenderComponent";
+import EmailSender from "../EmailSender/EmailSenderComponent";
 
-import "../css/footer.css";
+import "./footer.css";
 
 const FooterComponent = () => {
     const github_url = "https://github.com/himokkk/";

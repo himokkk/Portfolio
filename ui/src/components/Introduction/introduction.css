@@ -89,7 +89,7 @@
 .circle {
     border-radius: 50%;
     background-color: var(--dark-gray);
-    background-image: url(../assets/photo.png);
+    background-image: url(./assets/photo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -4,10 +4,9 @@ import { BsClipboardData } from "react-icons/bs";
 import { MdContactPage } from "react-icons/md";
 import { GiProgression } from "react-icons/gi";
 
-import "../css/basic.css";
-import "../css/navbar.css";
+import "./navbar.css";
 
-const NavBar = () => {
+const NavBarComponent = () => {
     return (
         <div className="prevent-select" id="navbar">
             <Link to="introduction" className="nav-button" activeClass="active" spy={true} smooth={true} duration={500}>
@@ -33,4 +32,4 @@ const NavBar = () => {
     );
 };
 
-export default NavBar;
+export default NavBarComponent;

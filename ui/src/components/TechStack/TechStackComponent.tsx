@@ -1,20 +1,13 @@
 // import React, { useEffect, useRef } from "react";
 
-import "../css/techstack.css";
+import "./techstack.css";
 
-import python_logo from "../assets/techstack/python-logo.svg";
-import python from "../assets/techstack/python.svg";
-import react_logo from "../assets/techstack/react-logo.svg";
-import react from "../assets/techstack/react.svg";
-// import { ReactComponent as JavaScriptLogo } from "../assets/techstack/javascript-logo.svg";
-// import { ReactComponent as TypeScriptLogo } from "../assets/techstack/typescript-logo.svg";
-
-// import CSSLogo from "../assets/techstack/css-logo.svg";
-// import HTMLLogo from "../assets/techstack/html-logo.svg";
-// import Django from '../assets/techstack/django-logo.svg';
-// import DjangoLogo from "../assets/techstack/django.png";
-import DockerLogo from "../assets/techstack/docker-logo.svg";
-import CppLogo from "../assets/techstack/cpp-logo.svg";
+import python_logo from "./assets/python-logo.svg";
+import python from "./assets/python.svg";
+import react_logo from "./assets/react-logo.svg";
+import react from "./assets/react.svg";
+import DockerLogo from "./assets/docker-logo.svg";
+import CppLogo from "./assets/cpp-logo.svg";
 
 // interface Vector {
 //   x: number;

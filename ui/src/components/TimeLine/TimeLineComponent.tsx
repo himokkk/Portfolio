@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../css/timeline.css";
+import "./timeline.css";
 
 const TimeLineComponent = () => {
     return (

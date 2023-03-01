@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "../css/basic.css";
 import "../css/chess.css";
 
-import NavBar from "../components/NavBar";
+import NavBar from "../components/NavBarComponent/NavBarComponent";
 
 interface Piece {
     piece: string;

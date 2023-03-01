@@ -1,7 +1,7 @@
 import React from "react";
 import { FiSend } from "react-icons/fi";
 
-import "../css/email_sender.css";
+import "./email_sender.css";
 
 const EmailSender: React.FC = () => {
     return (

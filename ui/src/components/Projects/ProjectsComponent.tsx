@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import "../css/projects.css";
+import "./projects.css";
 
 import { BsArrowUpRight } from "react-icons/bs";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
