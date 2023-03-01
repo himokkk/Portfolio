@@ -269,7 +269,7 @@ const TechStackComponent = () => {
                         </div>
                     </div>
                 </div>
-                <div className="hover-me">Hover me!</div>
+                <div className="hover-me">Hover them!</div>
             </div>
 
             {/* <div className="jar-container">

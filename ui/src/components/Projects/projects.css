@@ -1,6 +1,7 @@
 .projects {
     background-color: var(--dark-gray);
     height: 100vh;
+    height: --webkit-fill-available;
     display: flex;
     justify-content: center;
     align-items: center;
