@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.a6ffbac0.css",
+    "main.js": "/portfolio/static/js/main.d12e9afb.js",
+    "static/js/787.28cb0dcd.chunk.js": "/portfolio/static/js/787.28cb0dcd.chunk.js",
+    "static/media/photo.png": "/portfolio/static/media/photo.450837a97636fc455d52.png",
+    "static/media/python.svg": "/portfolio/static/media/python.3d252ba024c318f715d988fdda5affc2.svg",
+    "static/media/docker-logo.svg": "/portfolio/static/media/docker-logo.3253a6fe64f326e90f1716b7069eeeb8.svg",
+    "static/media/react.svg": "/portfolio/static/media/react.3867978f5a3d2d81dd8b664f29ed50d4.svg",
+    "static/media/react-logo.svg": "/portfolio/static/media/react-logo.64c74b673a6042cd239f1126d8b48e48.svg",
+    "static/media/cpp-logo.svg": "/portfolio/static/media/cpp-logo.b3d7d2bd01409bbe5cfe73c405cc2054.svg",
+    "static/media/python-logo.svg": "/portfolio/static/media/python-logo.e6d7dc739a91892bbf1f6262412046dd.svg",
+    "index.html": "/portfolio/index.html",
+    "main.a6ffbac0.css.map": "/portfolio/static/css/main.a6ffbac0.css.map",
+    "main.d12e9afb.js.map": "/portfolio/static/js/main.d12e9afb.js.map",
+    "787.28cb0dcd.chunk.js.map": "/portfolio/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6ffbac0.css",
+    "static/js/main.d12e9afb.js"
+  ]
+}
