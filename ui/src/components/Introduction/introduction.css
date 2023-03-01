@@ -52,6 +52,7 @@
     align-items: center;
     border-radius: 9999px;
     background-color: var(--react-blue);
+    color: white !important;
 }
 
 .introduction-content {
@@ -84,6 +85,7 @@
 
 #my-name {
     color: var(--react-blue);
+    margin-bottom: 1.5rem;
 }
 
 .circle {
@@ -116,6 +118,7 @@ h2,
 #software-developer {
     display: flex;
     gap: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .introduction-right h2 {

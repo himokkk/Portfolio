@@ -14,6 +14,11 @@
     display: none;
 }
 
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
 a:link {
     color: var(--white);
     text-decoration: none;

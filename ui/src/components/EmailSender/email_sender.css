@@ -39,6 +39,8 @@
     border: 1px solid var(--react-blue);
     margin-right: 10px;
     font-size: 16px;
+    padding-left: 1rem;
+    color: white;
 }
 
 .send-email-footer input {
@@ -52,16 +54,6 @@
     margin-top: 1rem;
 }
 
-.send-email-footer button {
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    background-color: var(--react-blue);
-    color: var(--mid-gray);
-    font-size: 16px;
-    cursor: pointer;
-}
-
 .send-button {
     display: flex;
     justify-content: center;
@@ -70,7 +62,8 @@
     width: 5rem;
     height: 3.4rem;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: 900;
 }
 
 .send-icon {

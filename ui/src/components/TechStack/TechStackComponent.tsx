@@ -218,7 +218,7 @@ const TechStackComponent = () => {
     // }, []);
 
     return (
-        <div id="skills">
+        <div id="skills" className="prevent-select">
             <h1>My Tech Stack:</h1>
             <div className="skills-container">
                 <div className="hover-me">Hover them!</div>

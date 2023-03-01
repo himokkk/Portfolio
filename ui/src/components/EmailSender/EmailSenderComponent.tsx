@@ -5,7 +5,7 @@ import "./email_sender.css";
 
 const EmailSender: React.FC = () => {
     return (
-        <div className="send-email-footer">
+        <div className="send-email-footer  prevent-select">
             <h2>Email me!</h2>
             <form>
                 <div className="email-container">

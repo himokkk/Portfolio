@@ -1,15 +1,18 @@
+import { Link } from "react-scroll";
 import "./introduction.css";
 
 const IntroductionComponent = () => {
     return (
         <div id="introduction">
             <div className="relative">
-                <div id="introduction-nav">
+                <div id="introduction-nav" className="prevent-select">
                     <div id="small-logo">
                         <div>Paweł</div>
                         <div>Kwieciński</div>
                     </div>
-                    <div className="hire-me-button">Hire Me!</div>
+                    <Link to="contact" smooth={true} duration={500}>
+                        <div className="hire-me-button">Hire Me!</div>
+                    </Link>
                 </div>
                 <div className="introduction-content">
                     <div className="introduction-left">
