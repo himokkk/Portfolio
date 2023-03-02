@@ -18,6 +18,11 @@
     display: flex;
 }
 
+.email-container input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px var(--darkest-gray) inset !important;
+    color: white !important;
+}
+
 .title-input-text {
     position: absolute;
     top: -0.75rem;
@@ -54,7 +59,7 @@
     margin-top: 1rem;
 }
 
-.send-button {
+.email-container button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,15 +67,17 @@
     width: 5rem;
     height: 3.4rem;
     border-radius: 5px;
-    font-size: 1.2rem;
+    border: 0;
+    font-size: 1.1rem;
     font-weight: 900;
+    color: white;
 }
 
 .send-icon {
     position: relative;
-    top: 0.1rem;
-    margin-left: 0.3rem;
-    font-size: 1rem;
+    top: 0.3rem;
+    margin-left: 0.1rem;
+    font-size: 1.3rem;
 }
 
 .send-email-footer .disclaimer {

@@ -1,13 +1,29 @@
-import React from "react";
+import React, { useRef } from "react";
 import { FiSend } from "react-icons/fi";
+import emailjs from "@emailjs/browser";
 
 import "./email_sender.css";
 
 const EmailSender: React.FC = () => {
+    const emailForm = useRef(null);
+
+    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        // @ts-ignore
+        emailjs.sendForm("service_8gi25m9", "template_axeknlu", emailForm.current, "bnlSnLejGFC1Ee44t").then(
+            function (response) {
+                console.log("SUCCESS!", response.status, response.text);
+            },
+            function (error) {
+                console.log("FAILED...", error.text);
+            },
+        );
+    };
+
     return (
         <div className="send-email-footer  prevent-select">
             <h2>Email me!</h2>
-            <form>
+            <form ref={emailForm} onSubmit={sendEmail}>
                 <div className="email-container">
                     <div className="relative">
                         <label className="title-input-text" id="email-title">
@@ -15,10 +31,12 @@ const EmailSender: React.FC = () => {
                         </label>
                         <input type="email" id="email" name="email" placeholder="Enter your email" required />
                     </div>
-                    <div className="send-button">
+                    <button type="submit">
                         Send
-                        <FiSend className="send-icon" />
-                    </div>
+                        <div>
+                            <FiSend className="send-icon" />
+                        </div>
+                    </button>
                 </div>
                 <div className="relative">
                     <label className="title-input-text" id="message-title">
