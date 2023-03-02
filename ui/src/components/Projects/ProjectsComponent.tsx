@@ -50,7 +50,7 @@ const ProjectsComponent: React.FC = () => {
                 <div className="projects-content">
                     <div className="project-content">
                         <div className="project-header">
-                            <div className="project-title"> Chess</div>
+                            <div className="project-title">Chess</div>
                             <div className="annotation-link">
                                 <BsArrowUpRight className="arrow" />
                             </div>
