@@ -44,7 +44,7 @@ const ProjectsComponent: React.FC = () => {
                 <div id="projects-header">
                     <h1 className="prevent-select">Projects</h1>
                     <AiOutlineFundProjectionScreen id="projects-logo" />
-                    <div className="projects-description">I created my own projects.</div>
+                    <div className="projects-description">Projects will be added soon.</div>
                 </div>
                 <div className="vertical-line"></div>
                 <div className="projects-content">

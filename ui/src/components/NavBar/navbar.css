@@ -31,7 +31,8 @@
 .active {
     color: white;
     border-radius: 100%;
-    background: linear-gradient(92.23deg, #406aff 21.43%, #3bace2 50.53%, #b936ee 100%, #ff56f6 117.04%);
+    background-color: var(--pink);
+    box-shadow: 0 0 10px 0 var(--pink);
 }
 
 @media only screen and (max-width: 768px) {
