@@ -39,10 +39,10 @@ const ProjectsComponent: React.FC = () => {
     };
 
     return (
-        <div className="projects prevent-select" id="projects">
+        <div className="projects" id="projects">
             <div className={showDiv ? "show-div show" : "show-div"} id="projects-main">
                 <div id="projects-header">
-                    <h1>Projects</h1>
+                    <h1 className="prevent-select">Projects</h1>
                     <AiOutlineFundProjectionScreen id="projects-logo" />
                     <div className="projects-description">I created my own projects.</div>
                 </div>
@@ -50,7 +50,7 @@ const ProjectsComponent: React.FC = () => {
                 <div className="projects-content">
                     <div className="project-content">
                         <div className="project-header">
-                            <div className="project-title">Chess</div>
+                            <div className="project-title prevent-select">Chess</div>
                             <div className="annotation-link">
                                 <BsArrowUpRight className="arrow" />
                             </div>
@@ -61,14 +61,14 @@ const ProjectsComponent: React.FC = () => {
                                 advanced algorithms that make it a formidable opponent. The game followed the classic
                                 rules of chess, with the objective being to checkmate the opponent's king.
                             </div>
-                            <div className="learn-more">Learn more</div>
+                            <div className="learn-more prevent-select">Learn more</div>
                         </div>
                         <hr className="horizontal-line" />
                     </div>
 
                     <div className="project-content">
                         <div className="project-header">
-                            <div className="project-title"> Chess</div>
+                            <div className="project-title  prevent-select"> Chess</div>
                             <div className="annotation-link">
                                 <BsArrowUpRight className="arrow" />
                             </div>
@@ -79,14 +79,14 @@ const ProjectsComponent: React.FC = () => {
                                 advanced algorithms that make it a formidable opponent. The game followed the classic
                                 rules of chess, with the objective being to checkmate the opponent's king.
                             </div>
-                            <div className="learn-more">Learn more</div>
+                            <div className="learn-more prevent-select">Learn more</div>
                         </div>
                         <hr className="horizontal-line" />
                     </div>
 
                     <div className="project-content">
                         <div className="project-header">
-                            <div className="project-title">Chess</div>
+                            <div className="project-title  prevent-select">Chess</div>
                             <div className="annotation-link">
                                 <BsArrowUpRight className="arrow" />
                             </div>
@@ -97,7 +97,7 @@ const ProjectsComponent: React.FC = () => {
                                 advanced algorithms that make it a formidable opponent. The game followed the classic
                                 rules of chess, with the objective being to checkmate the opponent's king.
                             </div>
-                            <div className="learn-more">Learn more</div>
+                            <div className="learn-more  prevent-select">Learn more</div>
                         </div>
                         <hr className="horizontal-line" />
                     </div>
