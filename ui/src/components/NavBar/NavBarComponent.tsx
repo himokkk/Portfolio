@@ -9,23 +9,63 @@ import "./navbar.css";
 const NavBarComponent = () => {
     return (
         <div className="prevent-select" id="navbar">
-            <Link to="introduction" className="nav-button" activeClass="active" spy={true} smooth={true} duration={500}>
+            <Link
+                to="introduction"
+                className="nav-button"
+                activeClass="active"
+                ignoreCancelEvents={true}
+                spy={true}
+                smooth={true}
+                duration={500}
+            >
                 <BiHomeAlt />
             </Link>
 
-            <Link to="projects" className="nav-button" activeClass="active" spy={true} smooth={true} duration={500}>
+            <Link
+                to="projects"
+                className="nav-button"
+                activeClass="active"
+                ignoreCancelEvents={true}
+                spy={true}
+                smooth={true}
+                duration={500}
+            >
                 <BiUser />
             </Link>
 
-            <Link to="skills" className="nav-button" activeClass="active" spy={true} smooth={true} duration={500}>
+            <Link
+                to="skills"
+                className="nav-button"
+                activeClass="active"
+                ignoreCancelEvents={true}
+                spy={true}
+                smooth={true}
+                duration={500}
+            >
                 <BsClipboardData />
             </Link>
 
-            <Link to="timeline" className="nav-button" activeClass="active" spy={true} smooth={true} duration={500}>
+            <Link
+                to="timeline"
+                className="nav-button"
+                activeClass="active"
+                ignoreCancelEvents={true}
+                spy={true}
+                smooth={true}
+                duration={500}
+            >
                 <GiProgression />
             </Link>
 
-            <Link to="contact" className="nav-button" activeClass="active" spy={true} smooth={true} duration={500}>
+            <Link
+                to="contact"
+                className="nav-button"
+                activeClass="active"
+                ignoreCancelEvents={true}
+                spy={true}
+                smooth={true}
+                duration={500}
+            >
                 <MdContactPage />
             </Link>
         </div>
