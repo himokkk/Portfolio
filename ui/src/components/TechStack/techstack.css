@@ -266,6 +266,10 @@
 } */
 
 @media only screen and (max-width: 549px) {
+    #skills {
+        justify-content: flex-start;
+    }
+
     .stack {
         width: 8rem;
         height: 8rem;

@@ -144,8 +144,17 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    #projects {
+        align-items: flex-start;
+        padding-top: 1rem;
+    }
+    #projects-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .project-content {
-        max-width: 15rem;
+        max-width: 19rem;
         padding-bottom: 1rem;
     }
 
@@ -180,11 +189,13 @@
 
     .projects-description {
         font-size: 0.8rem;
+        width: 10rem;
+        margin-bottom: 1rem;
     }
 
     .project-description {
         max-width: 18rem;
-        font-size: 0.6rem;
+        font-size: 0.7rem;
         margin-top: 0.4rem;
         word-spacing: 0rem;
         padding-right: 0.1rem;

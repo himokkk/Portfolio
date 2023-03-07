@@ -68,7 +68,7 @@ const ProjectsComponent: React.FC = () => {
 
                     <div className="project-content">
                         <div className="project-header">
-                            <div className="project-title  prevent-select"> Chess</div>
+                            <div className="project-title prevent-select">Chess</div>
                             <div className="annotation-link">
                                 <BsArrowUpRight className="arrow" />
                             </div>
