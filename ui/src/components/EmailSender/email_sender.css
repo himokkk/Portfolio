@@ -25,7 +25,7 @@
 
 .title-input-text {
     position: absolute;
-    top: -0.75rem;
+    top: -0.8rem;
     left: 1.25rem;
     z-index: 20;
     background-color: var(--darkest-gray);
@@ -33,7 +33,7 @@
 }
 
 #message-title {
-    top: 0.2rem;
+    top: 0.1rem;
 }
 
 .send-email-footer input,

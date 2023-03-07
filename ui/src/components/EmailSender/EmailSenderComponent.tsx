@@ -6,23 +6,29 @@ import "./email_sender.css";
 
 const EmailSender: React.FC = () => {
     const emailForm = useRef(null);
+    const errorRef = useRef(null);
 
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         // @ts-ignore
         emailjs.sendForm("service_8gi25m9", "template_axeknlu", emailForm.current, "bnlSnLejGFC1Ee44t").then(
             function (response) {
-                console.log("SUCCESS!", response.status, response.text);
+                (e.target as HTMLFormElement).reset();
+                if (errorRef.current) {
+                    (errorRef.current as HTMLElement).innerHTML = "Success sending mail.";
+                }
             },
             function (error) {
-                console.log("FAILED...", error.text);
+                if (errorRef.current) {
+                    (errorRef.current as HTMLElement).innerHTML = "Error sending mail.";
+                }
             },
         );
     };
 
     return (
         <div className="send-email-footer  prevent-select">
-            <h2>Email me!</h2>
+            <h2 ref={errorRef}>Email me!</h2>
             <form ref={emailForm} onSubmit={sendEmail}>
                 <div className="email-container">
                     <div className="relative">
