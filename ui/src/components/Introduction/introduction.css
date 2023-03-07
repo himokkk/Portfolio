@@ -268,3 +268,9 @@ h2,
         font-size: 1.7rem;
     }
 }
+
+@media only screen and (max-height: 1000px) and (max-width: 415px) {
+    .introduction-content {
+        justify-content: left;
+    }
+}
