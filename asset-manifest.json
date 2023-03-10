@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.a3ac9303.css",
-    "main.js": "/Portfolio/static/js/main.32e5c4d9.js",
+    "main.css": "/Portfolio/static/css/main.9f4e03e6.css",
+    "main.js": "/Portfolio/static/js/main.be776a6c.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/photo.png": "/Portfolio/static/media/photo.450837a97636fc455d52.png",
     "static/media/python.svg": "/Portfolio/static/media/python.3d252ba024c318f715d988fdda5affc2.svg",
     "static/media/docker-logo.svg": "/Portfolio/static/media/docker-logo.3253a6fe64f326e90f1716b7069eeeb8.svg",
-    "static/media/react.svg": "/Portfolio/static/media/react.3867978f5a3d2d81dd8b664f29ed50d4.svg",
+    "static/media/react.svg": "/Portfolio/static/media/react.bcdf4481f14ff2ed9b44a1d68c5f84b3.svg",
     "static/media/react-logo.svg": "/Portfolio/static/media/react-logo.64c74b673a6042cd239f1126d8b48e48.svg",
     "static/media/cpp-logo.svg": "/Portfolio/static/media/cpp-logo.b3d7d2bd01409bbe5cfe73c405cc2054.svg",
     "static/media/python-logo.svg": "/Portfolio/static/media/python-logo.e6d7dc739a91892bbf1f6262412046dd.svg",
     "index.html": "/Portfolio/index.html",
-    "main.a3ac9303.css.map": "/Portfolio/static/css/main.a3ac9303.css.map",
-    "main.32e5c4d9.js.map": "/Portfolio/static/js/main.32e5c4d9.js.map",
+    "main.9f4e03e6.css.map": "/Portfolio/static/css/main.9f4e03e6.css.map",
+    "main.be776a6c.js.map": "/Portfolio/static/js/main.be776a6c.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3ac9303.css",
-    "static/js/main.32e5c4d9.js"
+    "static/css/main.9f4e03e6.css",
+    "static/js/main.be776a6c.js"
   ]
 }
