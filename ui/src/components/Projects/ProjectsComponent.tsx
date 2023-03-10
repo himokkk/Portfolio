@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import "./projects.css";
 
@@ -52,7 +53,9 @@ const ProjectsComponent: React.FC = () => {
                         <div className="project-header">
                             <div className="project-title prevent-select">Chess</div>
                             <div className="annotation-link">
-                                <BsArrowUpRight className="arrow" />
+                                <Link to="/project">
+                                    <BsArrowUpRight className="arrow" />
+                                </Link>
                             </div>
                         </div>
                         <div className="project-description-container">
@@ -70,7 +73,9 @@ const ProjectsComponent: React.FC = () => {
                         <div className="project-header">
                             <div className="project-title prevent-select">Chess</div>
                             <div className="annotation-link">
+                            <Link to="/project">
                                 <BsArrowUpRight className="arrow" />
+                            </Link>
                             </div>
                         </div>
                         <div className="project-description-container">
@@ -88,7 +93,9 @@ const ProjectsComponent: React.FC = () => {
                         <div className="project-header">
                             <div className="project-title  prevent-select">Chess</div>
                             <div className="annotation-link">
-                                <BsArrowUpRight className="arrow" />
+                                <Link to="/project">
+                                    <BsArrowUpRight className="arrow" />
+                                </Link>
                             </div>
                         </div>
                         <div className="project-description-container">
